@@ -1,10 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>TIAG mResilience</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,10 +18,77 @@
 
     
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen" />
   </head>
+
   <body>
 
+<!--01 Nav-->
+    <nav class="navbar navbar-expand-lg nav-bg-color navbar-light" id="nav">
+       <a class="navbar-brand" href="#"><img src="assets/images/mResFullLogo.svg" alt="mResilience Logo" class="img-fluid"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+
+    <!--Start of NavBar links-->
+       <div class="collapse navbar-collapse titillium-font" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+    <!--NavBar Main Link-->
+             <li class="nav-item">
+                <a class="nav-link" href="#main"><h5>Main</h5><span class="sr-only">(current)</span></a>
+             </li>
+
+    <!--NavBar Solution Link-->
+            <li class="nav-item">
+                <a class="nav-link" href="solution"><h5>Solution</h5></a>
+             </li>  
+    <!--NavBar Features Link-->
+            <li class="nav-item">
+                <a class="nav-link" href="features"><h5>Features</h5></a>
+             </li>   
+
+    <!--NavBar Articles Link-->
+            <li class="nav-item">
+                <a class="nav-link" href="articles"><h5>Articles</h5></a>
+              </li>  
+
+    <!--NavBar Contact Link-->
+            <li class="nav-item">
+                <a class="nav-link" href="contact"><h5>Contact</h5></a>
+              </li>  
+
+		<!--NavBar About Link-->
+            <li class="nav-item">
+                    <a class="nav-link" href="#about"><h5>About</h5></a>
+                </li>
+    <!--NavBar Facebook Link-->
+            <li class="nav-item">
+              <a class="nav-link" id="nav-fb"><img src="Assets/Images/Facebook.svg" alt="facebook logo"></a>
+              </li>
+    <!--NavBar TIAG Link to www.tiag.net-->
+			  <li class="nav-item" id="nav-tiag">
+			  <a href="http://tiag.net" target="_blank" class="nav-link"><img src="Assets/Images/TIAGlogo.svg" height="29px" alt="TIAG logo"></a>
+				  </li>	
+           
+          </ul>
+
+       </div>
+    </nav>
+    
+<!--02 Main--> 
+
+    <div class="Main" id="main">
+      <div class="container row col-12">
+      <div class="col-7"><img src="Assets/Images/01MainPhone.png" width="100%"> </div>
+    <div class="algin-left col-5 ml-auto">
+    <h4>A Resilience Mobile Program for First Responders</h4>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi quidem nostrum quasi reiciendis architecto sapiente explicabo repellat.</p>
+            <p class="lead">
+  
+      </p>
+    </div>
+    
      
     
 
@@ -25,20 +97,29 @@
 
 
 
+<!-- PORTAL DIV -->
+<div id= "portal-div">
+  <div class="row">
+    <!-- div for the portal text -->
+    <div class="col-6">
+      <img src="Assets/Images/mResLogo.svg" alt="mResLogo">
+      <h3>Mobil App for First Responders</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam numquam dolorem quia pariatur tenetur nulla eaque quis, labore placeat soluta mollitia aliquid, repellat fuga, animi quas iste maxime dolor.</p>
+      
+      <h3>Key Features</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iure facilis amet magni. Cupiditate alias unde, quis numquam nisi, id eligendi temporibus quaerat totam voluptas, atque dolores hic fugiat dolor.</p> 
+    </div>
 
+    <!-- div for the Feature images -->
+    <div class="col-6" style = "text-align: center">
+      <img src="Assets/Images/03phone_preview1.png" alt="feature1">
 
+      <img src="Assets/Images/04phone_preview2.png" alt="feature2">
+    </div>
+  </div>
+</div>
 
-
-
-
-
-    
-
-
-
-
-
-
+<!-- INPUT FORM DIV -->
 <div id="contact">
 
   <div id="card-info">
@@ -54,37 +135,56 @@
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label>
       <div class="col-sm-4">
-        <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="Dept">
+
+        <input type="text" class="form-control form-control" id="user-dept" placeholder="Dept">
+
       </div>
     </div>
 
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label>
       <div class="col-sm-4">
-        <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="name">
+
+        <input type="text" class="form-control form-control" id="user-name" placeholder="name">
+
       </div>
     </div>
 
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="colFormLabel" placeholder="last name">
+
+        <input type="text" class="form-control" id="user-last-name" placeholder="last name">
+
       </div>
     </div>
 
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
       <div class="col-sm-4">
-        <input type="email" class="form-control form-control" id="colFormLabel" placeholder="email">
+
+        <input type="email" class="form-control form-control" id="user-email" placeholder="email">
       </div>
     </div>
+
+    <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
+        <div class="col-sm-4">
+            <label for="message"></label>
+            <textarea id="message" name="message" required="required" placeholder="notes">
+            </textarea>
+        </div>
+      </div>
+
 
       <!--SUBMIT BUTTON-->
 
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
       <div class="col-sm-4">
-        <button type="submit" class="btn btn-primary">submit</button>
+
+        <button type="submit" class="btn btn-primary" id="send">submit</button>
+
       </div>
     </div>
 
@@ -92,14 +192,14 @@
 
 </div>  <!-- closes contact div-->
 
+        
+    <!-- FOOTER FOR THE WEBSITE -->
 
-
-    <!-- Footer for the website -->
     <div class="footer">
       <div class="row">
       <!-- icon space -->
       <div class= "col-2">
-        <p class = "pFooter">Test icon</p>
+        <img src= "Assets/Images/TIAGlogo.svg" alt= "TIAGlogo">
       </div> 
 
       <!-- info space -->
@@ -109,12 +209,11 @@
 
       <!-- fbook icon space  -->
       <div class= "col-2">
-        <p class = "pFooter"> Test 2nd icon</p>
+        <img src= "Assets/Images/mresilience_sm_blue.svg" alt= "mresilience_sm_blue">
+        <img src= "Assets/Images/Facebook.svg" alt="fbLogo">
       </div> 
     </div>
     </div>
-
-
 
 
     <!-- Optional JavaScript -->
@@ -122,8 +221,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<<<<<<< HEAD
    
     <script src="emailVali.js"></script>
+=======
+
+
+    <!-- the validation script probably needs to be before this line -->
+    <!-- script link to send email from contact form to tiag -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+>>>>>>> 6c90ad62ee7edac7c2194a089762b6dfea786405
 
   </body>
 </html>

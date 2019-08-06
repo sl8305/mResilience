@@ -1,13 +1,59 @@
+body {
+width: 100%
+
+}
+
+nav {
+font-family: 'Titillium Web', sans-serif;
+color: #001365;
+background-color: #efefef;
+}
+
+.nav-link {
+    margin-right: 20px;
+    }
+
+.nav-link h5 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #001365;
+    }
+
+.nav-link h5:hover {
+    font-family: 'Titillium Web', sans-serif;
+    color: #eeeeee;
+    background-color: #001365;
+    }
+
+.nav-link:hover {
+        background-color: #001365;
+        }
+
+#nav-fb {
+    margin-right: 0px;
+    }
+    
 .footer {
     position: fixed;
     padding: 10px;
     width: 100%;
-    background: whitesmoke;
+    background: #efefef;
     text-align: center;
-    color: blue;
+    color: #001365;
     float: left;
 }
 
 .pFooter {
     margin: 10px;
+}
+
+img {
+    padding: 10px;
+}
+
+h3, {
+    color: #001365;
+}
+
+#portal-div{
+    color:#3e3e3e;
 }
