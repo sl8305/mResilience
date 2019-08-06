@@ -6,13 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Google Fonts-->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script type ="emailVali.js"></script>
+
+    
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css" media="screen" />
   </head>
@@ -71,10 +75,11 @@
 
        </div>
     </nav>
+
 <!--Container for whole site-->
 <div class="container">
-<!--02 Main--> 
-
+   
+    <!--02 Main--> 
     <div class="row" id="main">
       <!-- <div class="container col-12"> -->
         <div class="col-7"><img src="Assets/Images/01MainPhone.png" width="100%"> </div>
@@ -146,22 +151,20 @@
             </div>
     
         </div>
-
-      
         </div>
         </div>
       </div> <!-- End of Why Section -->
 
   <!--03B: The Solution Section-->
 
-        <div id="solution"><h5>The Solution</h5></div>
+    <div id="solution"><h5>The Solution</h5></div>
         
-        <div class="row" id="solutionstatement">
-          <div class="col-12">
-            <p>mResilience is a customized program, licensed to first responder agencies to develop, maintain, and rebuild psychological resilience. It's a combation of in-person training and a companion mobile application.
-            </p>
-          </div>
-        </div>    
+    <div class="row" id="solutionstatement">
+      <div class="col-12">
+        <p>mResilience is a customized program, licensed to first responder agencies to develop, maintain, and rebuild psychological resilience. It's a combation of in-person training and a companion mobile application.
+        </p>
+      </div>
+    </div>    
         
     <div class="row" id="titles2">
       <div class="col-6" id="whymRes"><h5>Why mResilience</h5>
@@ -195,31 +198,28 @@
 
           </div>
           
-         
         </div>
         <!-- </div> -->
       </div>
-    </div>  
-        <div id=Vision>
-          <h5>Our Vision</h5>
-        </div>
+      
 
-          <div class="col-12 ml-auto" id="visionbullets"><ul>
-              <li>First Responders can naviate difficult situations and stay resilience</li>
-              <li>Effective stress management and performance-enhancing tools are available 24/7</li>
-              <li>Department programs are reinforced through improved access</li>
-              <li>Our program helps reverse the trends of stress-related challenges of officers and departments</li>
+  <div class="row">
+    <div class="col-12">
+          <h5>Our Vision</h5>
+          <div class="row">
+            <div class="col-12" id="visionbullets">
+              <ul>
+                <li>First Responders can naviate difficult situations and stay resilience</li>
+                <li>Effective stress management and performance-enhancing tools are available 24/7</li>
+                <li>Department programs are reinforced through improved access</li>
+                <li>Our program helps reverse the trends of stress-related challenges of officers and departments</li>
             </ul> 
           </div> 
-    
-        </p>
+        </div>
       </div>
-      </div>
-
-
-
-
-<!-- 04 PORTAL DIV -->
+    </div>
+  </div>
+<!---- 04 PORTAL DIV ---->
 <div class= "container" id= "portal-div">
   <div class="row">
     <!-- div for the portal text -->
@@ -240,7 +240,7 @@
   </div>
 </div>
 
-<!-- 05 Contact Form-->
+<!---- 05 Contact Form ---->
 <div id="contact">
 
   <div id="card-info">
@@ -256,43 +256,62 @@
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label>
       <div class="col-sm-4">
-        <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="Dept">
+
+        <input type="text" class="form-control form-control" id="user-dept" placeholder="Dept">
+
       </div>
     </div>
 
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label>
       <div class="col-sm-4">
-        <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="name">
+
+        <input type="text" class="form-control form-control" id="user-name" placeholder="name">
+
       </div>
     </div>
 
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="colFormLabel" placeholder="last name">
+
+        <input type="text" class="form-control" id="user-last-name" placeholder="last name">
+
       </div>
     </div>
 
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
       <div class="col-sm-4">
-        <input type="email" class="form-control form-control" id="colFormLabel" placeholder="email">
+
+        <input type="email" class="form-control form-control" id="user-email" placeholder="email">
       </div>
     </div>
 
-      <!--SUBMIT BUTTON-->
+    <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
+        <div class="col-sm-4">
+            <label for="message"></label>
+            <textarea id="message" name="message" required="required" placeholder="notes">
+            </textarea>
+        </div>
+      </div>
 
+
+    <!------ SUBMIT BUTTON ------>
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
       <div class="col-sm-4">
-        <button type="submit" class="btn btn-primary">submit</button>
+
+        <button type="submit" class="btn btn-primary" id="send">submit</button>
+
       </div>
     </div>
 
   </form>
 
 </div>  <!-- closes contact div-->
+
 
 <!--06 Articles goes here-->
 
@@ -303,34 +322,47 @@
 
 <!--closing tag for wholeSite-->
 </div>
-    <!-- FOOTER FOR THE WEBSITE -->
+    
 
-    <div class="footer">
+  <!-- FOOTER FOR THE WEBSITE -->
+  <footer class="footer">
+    <div class="container">
       <div class="row">
-      <!-- icon space -->
-      <div class= "col-2">
-        <img src= "Assets/Images/TIAGlogo.svg" alt= "TIAGlogo">
-      </div> 
+        <!-- icon space -->
+        <div class= "col-2">
+          <img class= "footerImage center-block" src= "Assets/Images/TIAGlogo.svg" alt= "TIAGlogo" style= "margin-top: 30px;">
+        </div> 
 
-      <!-- info space -->
-      <div class= "col-8">
-        <p class = "pFooter"> Test info </p>
-      </div> 
+        <!-- info space -->
+        <div class= "col-8">
+          <p class = "pFooter"> TIAG® is a woman-owned business. DUNS: 065245750. </p>
+          <p class = "pFooter"> Corporate Headquarters: (703) 437-7878 Ext. 11911 </p>
+          <p class = "pFooter"> Freedom Drive, Suite 1180, Reston, VA 20190 </p>
+            <br>
+          <p class = "pFooter"> This website is Copyright © 2019 </p>
+          <p class = "pFooter"> The Informatics Applications Group, Inc. </p>
+        </div> 
 
-      <!-- fbook icon space  -->
-      <div class= "col-2">
-        <img src= "Assets/Images/mresilience_sm_blue.svg" alt= "mresilience_sm_blue">
-        <img src= "Assets/Images/Facebook.svg" alt="fbLogo">
-      </div> 
+        <!-- fbook icon space  -->
+        <div class= "col-2">
+          <img class= "footerImage" src= "Assets/Images/mresilience_sm_blue.svg" alt= "mresilience_sm_blue" style= "margin-top: 20px;">
+          <img class= "footerImage" src= "Assets/Images/Facebook.svg" alt="fbLogo">
+        </div> 
+      </div>
     </div>
-    </div>
-
+  </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="emailVali.js"></script>
+
+    <!-- the validation script probably needs to be before this line -->
+    <!-- script link to send email from contact form to tiag -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+
   </body>
 </html>
-
