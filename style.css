@@ -33,8 +33,9 @@ background-color: #efefef;
     }
     
 .footer {
-    position: fixed;
+    position: absolute;
     padding: 10px;
+    bottom: 0;
     width: 100%;
     background: #efefef;
     text-align: center;
@@ -43,11 +44,15 @@ background-color: #efefef;
 }
 
 .pFooter {
-    margin: 10px;
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.5em;
 }
 
-img {
+.footerImage {
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3, {
