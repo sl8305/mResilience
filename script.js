@@ -11,29 +11,33 @@ var comments;
 function contact() {
     name = $('#user-name').val().trim();
     lastName = $('#user-last-name').val().trim();
-    emailAddress = $('#user-email');
-    comments = $('#message').val().trim;
+    emailAddress = $('#user-email').val().trim();
+    comments = $('#message').val().trim();
 }
 
 // click event on submit button will get contact() to run
-$('#send').on('click', function () {
+$('#send').on('click', function (stop) {
+    stop.preventDefault(); 
     contact();
-    console.log('name : ', name);
-    console.log('last name : ', lastName);
-    console.log('email : ', emailAddres);
-    console.log('comments : ', comments);
-});
 
-// code source can be found here: https://www.smtpjs.com/
+    // code source can be found here: https://www.smtpjs.com/
 // code with encryption available
 Email.send({
-    Host : 'smtp.yourisp.com',  // for testing
-    Username : "username",  // from user input, do we need it?
-    Password : "password",  // probably not needed for our purpose
-    To : 'marinocarranaa@hotmail.com',  // for testing
-    From : "you@isp.com",   //user input
-    Subject : "This is the subject",    // first words of comment or static?
-    Body : "And this is the body"   // will come from comment form
+    Host: 'smtp25.elasticemail.com',  // for testing
+    Username: 'marinocarranza@hotmail.com',  // from user input, do we need it?
+    Password: 'a5b01d0e-fdfe-4593-8205-cb8f0d332406',  // probably not needed for our purpose
+    To: 'marino.carranza@gmail.com',    // for testing
+    From: 'marinocarranza@hotmail.com',  //user input
+    Subject: 'from User',    // first words of comment or static?
+    Body: `${emailAddress} sent you a message and would love a reply
+                Message: ${comments}`   // will come from comment form
 }).then(
-  message => alert(message)
+    message => alert(message)
 );
+
+    
+    console.log('name : ', name);
+    console.log('last name : ', lastName);
+    console.log('email : ', emailAddress);
+    console.log('comments : ', comments);
+});
