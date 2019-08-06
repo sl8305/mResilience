@@ -1,12 +1,17 @@
 body {
-width: 100%
+width: 100%;
+}
 
+#wholeSite {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 nav {
 font-family: 'Titillium Web', sans-serif;
 color: #001365;
 background-color: #efefef;
+border-bottom: 2px solid #001365;
 }
 
 .nav-link {
@@ -25,13 +30,59 @@ background-color: #efefef;
     }
 
 .nav-link:hover {
-        background-color: #001365;
+    background-color: #001365;
         }
 
 #nav-fb {
     margin-right: 0px;
+    margin-top: 0px;
+    padding: 0px;
     }
-    
+/* Main Section*/
+
+#main h4 {
+    margin-top: 100px;
+    color: #001365;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#leadText {
+    font-family: 'Open Sans', sans-serif;
+    color: #3e3e3e;
+}
+
+#mainBottomImage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* The Why: Challenges and Solution Section*/
+#why {
+    background: #ffffff;
+}
+
+/* Bullet points of Why Section*/
+
+
+
+#whyBullets {
+    font-family: 'Open Sans', sans-serif;
+    color: #3e3e3e; 
+}
+
+#offerBullets {
+    font-family: 'Open Sans', sans-serif;
+    color: #3e3e3e;
+}
+
+#visionBullets {
+    font-family: 'Open Sans', sans-serif;
+    color: #3e3e3e;
+}
+
+/*Footer*/
+
 .footer {
     position: fixed;
     padding: 10px;
@@ -50,7 +101,7 @@ img {
     padding: 10px;
 }
 
-h3, {
+h3 {
     color: #001365;
 }
 
