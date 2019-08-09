@@ -51,9 +51,12 @@ Email.send({
     message => alert(message)
 );
 
+
     
-    console.log('name : ', name);
-    console.log('last name : ', lastName);
-    console.log('email : ', emailAddress);
-    console.log('comments : ', comments);
+    // console.log('name : ', name);
+    // console.log('last name : ', lastName);
+    // console.log('email : ', emailAddress);
+    // console.log('comments : ', comments);
 });
+
+
