@@ -5,6 +5,47 @@ var name;
 var lastName;
 var emailAddress;
 var comments;
+var x = window.matchMedia("(max-width: 700px)");
+
+function checkMobile(x){
+    if(x.matches) {
+        $('#footer-body').remove();
+        $("#footer-row").prepend("<div id= 'footer-body' class= 'col-sm-12'>");
+        $('#footer-body').append("<p class = 'pFooter'> TIAG® is a woman-owned business. DUNS: 065245750. </p>",
+                                "<p class = 'pFooter'> Corporate Headquarters: (703) 437-7878 Ext. 11911 </p>",
+                                "<p class = 'pFooter'> Freedom Drive, Suite 1180, Reston, VA 20190 </p>",
+                                "<br>",
+                                "<p class = 'pFooter'> This website is Copyright © 2019 </p>",
+                                "<p class = 'pFooter'> The Informatics Applications Group, Inc. </p>");
+        
+    
+    }
+    //else {
+    //     $('#footer-row').empty();
+    //     // adds first icon to the footer (left)
+    //     var dl= $('#footer-row').append("<div class= 'col-2 col-sm-6'>")
+    //     dl.append('<img class= "footerImage center-block" src= "Assets/Images/TIAGlogo.svg" alt= "TIAGlogo" style= "margin-top: 30px;">');
+
+    //     // adds footer text to the footer (middle)
+    //     var dm= $('#footer-row').append("<div class= 'col-8 col-sm-12'>");
+    //     dm.append("<p class = 'pFooter'> TIAG® is a woman-owned business. DUNS: 065245750. </p>",
+    //     "<p class = 'pFooter'> Corporate Headquarters: (703) 437-7878 Ext. 11911 </p>",
+    //     "<p class = 'pFooter'> Freedom Drive, Suite 1180, Reston, VA 20190 </p>",
+    //     "<br>",
+    //     "<p class = 'pFooter'> This website is Copyright © 2019 </p>",
+    //     "<p class = 'pFooter'> The Informatics Applications Group, Inc. </p>");
+        
+    //     // adds icons to the footer (right)
+    //     var dr= $('#footer-row').append("<div class= 'col-2 col-sm-6'>");
+    //     dr.append('<img class= "footerImage" src= "Assets/Images/mresilience_sm_blue.svg" alt= "mresilience_sm_blue" style= "margin-top: 20px;">',
+    //     '<img class= "footerImage" src= "Assets/Images/Facebook.svg" alt="fbLogo">');
+    // }
+    
+}
+
+checkMobile(x); // call function at run time
+x.addListener(checkMobile); // attatch listener function on state change
+
 
 
 // function to gather the contact info
@@ -41,3 +82,4 @@ Email.send({
     console.log('email : ', emailAddress);
     console.log('comments : ', comments);
 });
+
