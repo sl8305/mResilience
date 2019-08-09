@@ -63,28 +63,24 @@
                     <a class="nav-link" href="#about"><h5>About</h5></a>
                 </li>
     <!--NavBar Facebook Link-->
-           <li class="nav-item">
-            <a class="nav-link" id="nav-fb">
-            <a href="https://www.facebook.com/mresilience/" target= "_blank" class="nav-link1"><img src="Assets/Images/Facebook.svg" alt="facebook logo"></a>
+           <li class="nav-item" id="nav-fb">
+            <a href="https://www.facebook.com/mresilience/"  target= "_blank" class="nav-link"><img src="Assets/Images/Facebook.svg" alt="facebook logo"></a>
             </li>
     <!--NavBar TIAG Link to www.tiag.net-->
           <li class="nav-item" id="nav-tiag">
-          <a href="http://tiag.net" target="_blank" class="nav-link1"><img src="Assets/Images/TIAGlogo.svg" height="45px" alt="TIAG logo"></a>
-          </li>	
-          </ul>
+          <a href="http://tiag.net" target="_blank" class="nav-link"><img src="Assets/Images/TIAGlogo.svg" height="25Spx" alt="TIAG logo"></a>
+        </li>	
+      </ul>
 
-       </div>
+    </div>
     </nav>
 
-<!--Container for whole site-->
-<div class="container">
    
     <!--02 Main--> 
     <div class="row" id="main">
-      <!-- <div class="container col-12"> -->
         <div class="col-7"><img src="Assets/Images/01MainPhone.png" width="100%"> </div>
         <div class="align-left col-5 ml-auto">
-          <h4>A Resilience-based Mobile App for First Responders</h4>
+          <h4>Resilience-based Mobile App for First Responders</h4>
             <p class="lead" id="leadText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi quidem nostrum quasi reiciendis architecto sapiente explicabo repellat.</p>
             </p></div>
         <div class="col-12" id="mainBottomImage">
@@ -92,7 +88,8 @@
       </div>
     </div>
     <!-- </div> -->
-    
+ 
+ <div class="container">  
 <!--03 The Why--> 
     <div id="why">
     <div class="row">
@@ -100,43 +97,46 @@
 
   <!--03A: First Responder Challenges section-->
         <div class="row">
-          <div class="col-12"><h5>First Responder Challenges</h5></div>
-        </div>
+          <div class="col-12" div id="challengesHeader"><h5>First Responder Challenges</h5>
+            </div>
+          </div>
+  
         
-        <div class="row" id="challengestatement">
+        <div class="row" id="challengeStatement">
             <div class="col-12">
               <p>First Responders (FRs) are experiencing job-related stress affecting their resiliency and performance. Seeking help is not easy and access to psychological-based resources, services, and tools is limited.
               </p>
             </div>
         </div>
+
         <div class="row" id="titles">
-            <div class="col-6" id="stress"><h5>Effects of Stress & Exposure Include:</h5>
+            <div class="col-6" id="stressSubHeader"><h5><b>Effects of Stress & Trauma</b></h5>
               <div class="row">
               <div class="col-5" id="stressbullets">
                   <ul>
-                    <li>Stress</li>
-                    <li>Physical Injury</li>
+                    <li>Burnout</li>
+                    <li>Obesity</li>
                     <li>Substance Abuse</li>
                     <li>PTSD</li>
                     <li>Depression</li>
                   </ul>
                 </div>
       
-                <div class="col-5" id="stressbullets2">
+                <div class="col-6" id="stressbullets2">
                   <ul>
                   <li>Anxiety</li>
                   <li>Domestic Abuse</li>
                   <li>Suicide</li>
-                  <li>Cardiovascular disease</li>
+                  <li>Cardiovascular health</li>
                   <li>Limited access to resources</li>
                 </ul>
-                </div>
+              </div>
             </div>
-            </div>
+      </div>
             <!-- End of Effects of Stress section -->
 
-            <div class="col-6" id="challenges">
-              <h5>Department Challenges</h5>
+            <div class="col-6" id="challengesSubHeader">
+              <h5><b>Challenges</b></h5>
               <div class="row">
                   <div class="col-12" id="challengebullets"><ul>
                       <li>Rising number of stress-related challanges with officers</li>
@@ -144,22 +144,22 @@
                       <li>Stigma against psychological help</li>
                       <li>Officer depression and suicide rates higher than the public</li>
                       <li>Decline in physical fitness readiness</li>
-                    </ul></div>
-
-              </div>
-              
+                    </ul>
+                  </div>
+              </div> 
             </div>
-    
         </div>
-        </div>
-        </div>
-      </div> <!-- End of Why Section -->
+      </div>
+    </div>
+  </div> <!-- End of Why Section -->
 
   <!--03B: The Solution Section-->
+    <div class="row">
+      <div class="col-12" div id="solutionHeader"><h5>The Solution</h5>
+      </div>
+    </div>   
 
-    <div id="solution"><h5>The Solution</h5></div>
-        
-    <div class="row" id="solutionstatement">
+    <div class="row" id="solutionStatement">
       <div class="col-12">
         <p>mResilience is a customized program, licensed to first responder agencies to develop, maintain, and rebuild psychological resilience. It's a combation of in-person training and a companion mobile application.
         </p>
@@ -167,7 +167,7 @@
     </div>    
         
     <div class="row" id="titles2">
-      <div class="col-6" id="whymRes"><h5>Why mResilience</h5>
+      <div class="col-6" id="whymResSubHeader"><h5><b>Why mResilience</b></h5>
         <div class="row">
           <div class="col-12">
              <div id="whyBullets"><ul>
@@ -183,10 +183,11 @@
       </div>
       
         <!-- <div id="programOffers"> -->
-        <div class="col-6">
-          <h5>Program Offers</h5>
+        <div class="col-6" id="programSubHeader">
+          <h5><b>Program Offers</b></h5>
           <div class="row">
               <div class="col-12">
+                <div id="offerBullets">
                   <ul>
                       <li>Stress-management and resiliency building tools</li>
                       <li>Goal-setting and tracking</li>
@@ -194,31 +195,40 @@
                       <li>Self-regulations tools to maintain personal resilience</li>
                       <li>Customized in-person training</li>
                     </ul> 
+                  </div>
               </div>
-
-          </div>
-          
+          </div>     
         </div>
         <!-- </div> -->
       </div>
       
 
   <div class="row">
-    <div class="col-12">
-          <h5>Our Vision</h5>
+    <div class="col-12" id="visionSubHeader">
+          <h5><b>Vision</b></h5>
           <div class="row">
-            <div class="col-12" id="visionbullets">
+            <div class="col-12">
+              <div id="visionBullets">
               <ul>
                 <li>First Responders can naviate difficult situations and stay resilience</li>
                 <li>Effective stress management and performance-enhancing tools are available 24/7</li>
                 <li>Department programs are reinforced through improved access</li>
                 <li>Our program helps reverse the trends of stress-related challenges of officers and departments</li>
-            </ul> 
+              </ul> 
+            </div>
           </div> 
         </div>
       </div>
+<<<<<<< HEAD
+=======
+  </div>
+</div> 
+<!---- Div Container ---->
+
+
+>>>>>>> bd807c86cf6ae62b4555985c0a5c8be254b74262
 <!---- 04 PORTAL DIV ---->
-<div class= "container" id= "portal-div">
+<div class= "container" class="col-6" id= "portal-div">
   <div class="row">
     <!-- div for the portal text -->
     <div class="col-6">
@@ -239,21 +249,13 @@
 </div>
 
 <!---- 05 Contact Form ---->
-<div id="contact">
 
-  <div id="card-info">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Want to learn more?</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae.</p>
-      </div>
-    </div>
-  </div>  <!-- closes card-info div-->
+    <div class= "col-lg-12" id="back-form" class="col-6">
 
-  <form>
+    <form>
+      
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label>
-      <div class="col-sm-4">
+      <div class="col-sm-12">
 
         <input type="text" class="form-control form-control" id="user-dept" placeholder="Dept">
 
@@ -261,8 +263,8 @@
     </div>
 
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label>
-      <div class="col-sm-4">
+      <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label> -->
+      <div class="col-sm-12">
 
         <input type="text" class="form-control form-control" id="user-name" placeholder="name">
 
@@ -270,8 +272,8 @@
     </div>
 
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
-      <div class="col-sm-4">
+      <!-- <label for="colFormLabel" class="col-sm-2 col-form-label"></label> -->
+      <div class="col-sm-12">
 
         <input type="text" class="form-control" id="user-last-name" placeholder="last name">
 
@@ -279,18 +281,18 @@
     </div>
 
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
-      <div class="col-sm-4">
+      <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
+      <div class="col-sm-12">
 
         <input type="email" class="form-control form-control" id="user-email" placeholder="email">
       </div>
     </div>
 
     <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
-        <div class="col-sm-4">
+        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
+        <div class="col-sm-12">
             <label for="message"></label>
-            <textarea id="message" name="message" required="required" placeholder="notes">
+            <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes">
             </textarea>
         </div>
       </div>
@@ -298,8 +300,8 @@
 
     <!------ SUBMIT BUTTON ------>
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
-      <div class="col-sm-4">
+      <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
+      <div class="col-lg-12">
 
         <button type="submit" class="btn btn-primary" id="send">submit</button>
 
@@ -307,8 +309,12 @@
     </div>
 
   </form>
+  <div class="col-3">
+      <h5 class="col-lg-8">Want to learn more?</h5>
+    <p class="col-lg-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae.</p>
+  </div>
+</div>
 
-</div>  <!-- closes contact div-->
 
 
 <!--06 Articles goes here-->
@@ -318,8 +324,7 @@
 
 <!--07 About TIAG goes here-->
 
-<!--closing tag for wholeSite-->
-</div>
+
     
 
   <!-- FOOTER FOR THE WEBSITE -->
