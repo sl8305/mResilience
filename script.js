@@ -15,6 +15,22 @@ function contact() {
     comments = $('#message').val().trim();
 }
 
+// Spell Check API
+
+OkHttpClient client = new OkHttpClient();
+
+Request request = new Request.Builder()
+	.url("https://montanaflynn-spellcheck.p.rapidapi.com/check/?text=This%20sentnce%20has%20some%20probblems.")
+	.get()
+	.addHeader("x-rapidapi-host", "montanaflynn-spellcheck.p.rapidapi.com")
+	.addHeader("x-rapidapi-key", "f584d32ad1mshf0cebe5f7850049p16710bjsn468c2f3c3760")
+	.build();
+
+Response response = client.newCall(request).execute();
+
+
+
+
 // click event on submit button will get contact() to run
 $('#send').on('click', function (stop) {
     stop.preventDefault(); 
