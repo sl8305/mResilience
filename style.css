@@ -47,11 +47,14 @@ border-bottom: 2px solid #001365;
 /* 02 Main Section */
 
     #main h4 {
-        margin-top: 100px;
+        margin-top: 30px;
         color: #001365;
         font-family: 'Titillium Web', sans-serif;
     }
     
+    #mResLogo {
+        margin-top: 100px;
+    }
     #leadText {
         font-family: 'Open Sans', sans-serif;
         color: #3e3e3e;
@@ -66,14 +69,14 @@ border-bottom: 2px solid #001365;
 
 /* 03 Why Section*/
 
-#challengesHeader {
+    #challengesHeader {
     margin-top: 15px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
     background-color: #001365;
 }
 
-#solutionHeader {
+    #solutionHeader {
     margin-top: 10px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
@@ -208,6 +211,28 @@ div.form-group.row{
     background-color: #EFEFEF;
     color:#001365;
 }
+
+/*About*/
+#about {
+    background-color: #EFEFEF;
+    color:#001365;
+    }
+#whoWeAre {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#whoWeareP {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#haveIdeas {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#haveIdeasP {
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 /*Footer*/
 
