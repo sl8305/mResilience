@@ -47,11 +47,14 @@ border-bottom: 2px solid #001365;
 /* 02 Main Section */
 
     #main h4 {
-        margin-top: 100px;
+        margin-top: 30px;
         color: #001365;
         font-family: 'Titillium Web', sans-serif;
     }
     
+    #mResLogo {
+        margin-top: 100px;
+    }
     #leadText {
         font-family: 'Open Sans', sans-serif;
         color: #3e3e3e;
@@ -66,14 +69,14 @@ border-bottom: 2px solid #001365;
 
 /* 03 Why Section*/
 
-#challengesHeader {
+    #challengesHeader {
     margin-top: 15px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
     background-color: #001365;
 }
 
-#solutionHeader {
+    #solutionHeader {
     margin-top: 10px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
@@ -120,81 +123,95 @@ border-bottom: 2px solid #001365;
     font-family: 'Titillium Web', sans-serif;
 }
 
-/* Bullet points of Why Section*/
+/* 02 Why Section: Bullet points*/
 
 
 #stressbullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02checkmark.svg')
 }
 
 #stressbullets2 {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02checkmark.svg')
 }
 
 #challengebullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02exclamation.svg')
 }
 
 #solutionbullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
 }
 
 #whyBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 #offerBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e;
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 #visionBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e;
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
+
+
 
 /* want to learn more and form */
 
-div.col-3{
-    margin-top: 1em;
-    float: right;
+#learn-more{
+    margin-left:1em;
 }
 
-div.col-3 p.col-lg-8{
-    padding-right:0px;
-    margin-left: 30px;
-    text-align: justify;
-    width: 100%;
-    height: 235px;;
-    overflow: auto;
-    color:#3e3e3e;
+#back-form{
+    margin-left:2em;
 }
-div.col-3 h5{
-    margin-left: 30px;
+#learn-more.container.learn-more{
+    margin-top: 3em;
+    display: flex;
+}
+
+#learn-more.container h5{
     color: #001365;
 }
 
-form{
-    margin-top: 1em;
-    float: right;
-    margin-right:5%;
+#learn-more h5{
+    width: 50%;
+    color:#3e3e3e;
 }
 
-.col-sm-12 input{
-    border-radius: none;
+div.form-group.row div.col-lg-12 input{
     border-style: none;
     border-bottom: 1px solid #ced4da;
+    margin-bottom: .25em;
 }
+
 div.form-group.row{
     margin-bottom: .25em;
 }
+
 #message{
     border-radius: 8px;
+    height: 8em;
 }
 
 #send{
@@ -208,6 +225,35 @@ div.form-group.row{
     background-color: #EFEFEF;
     color:#001365;
 }
+
+/*07 About*/
+#about {
+    background-color: #EFEFEF;
+    color:#001365;
+    
+    }
+    .test {
+        margin: 0 100px;
+    }
+    
+#whoWeAre{
+    margin-top: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#whoWeareP{
+    /* margin-left: 10em; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+#haveIdeas{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#haveIdeasP{
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 /*Footer*/
 
@@ -239,4 +285,11 @@ h3 {
 
 #portal-div{
     color:#3e3e3e;
+    background:#efefef;
+    width:100%;
+    padding:20px;
+}
+
+#portalImg {
+    width:100%;
 }
