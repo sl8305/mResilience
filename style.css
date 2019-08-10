@@ -47,11 +47,14 @@ border-bottom: 2px solid #001365;
 /* 02 Main Section */
 
     #main h4 {
-        margin-top: 100px;
+        margin-top: 30px;
         color: #001365;
         font-family: 'Titillium Web', sans-serif;
     }
     
+    #mResLogo {
+        margin-top: 100px;
+    }
     #leadText {
         font-family: 'Open Sans', sans-serif;
         color: #3e3e3e;
@@ -66,14 +69,14 @@ border-bottom: 2px solid #001365;
 
 /* 03 Why Section*/
 
-#challengesHeader {
+    #challengesHeader {
     margin-top: 15px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
     background-color: #001365;
 }
 
-#solutionHeader {
+    #solutionHeader {
     margin-top: 10px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
@@ -120,43 +123,58 @@ border-bottom: 2px solid #001365;
     font-family: 'Titillium Web', sans-serif;
 }
 
-/* Bullet points of Why Section*/
+/* 02 Why Section: Bullet points*/
 
 
 #stressbullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02checkmark.svg')
 }
 
 #stressbullets2 {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02checkmark.svg')
 }
 
 #challengebullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02exclamation.svg')
 }
 
 #solutionbullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
 }
 
 #whyBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 #offerBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e;
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 #visionBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e;
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
+
+
 
 /* want to learn more and form */
 
@@ -241,6 +259,34 @@ label{
 
 div.col-sm-12{
     margin-bottom:1em;
+
+  
+/*07 About*/
+#about {
+    background-color: #EFEFEF;
+    color:#001365;
+    
+    }
+    .test {
+        margin: 0 100px;
+    }
+    
+#whoWeAre{
+    margin-top: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#whoWeareP{
+    /* margin-left: 10em; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+#haveIdeas{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#haveIdeasP{
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -274,4 +320,11 @@ h3 {
 
 #portal-div{
     color:#3e3e3e;
+    background:#efefef;
+    width:100%;
+    padding:20px;
+}
+
+#portalImg {
+    width:100%;
 }
