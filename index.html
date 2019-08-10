@@ -228,10 +228,10 @@
 <br>
 
 <!---- 04 PORTAL DIV ---->
-<div class= "container" class="col-6" id= "portal-div">
+<div class= "container" id= "portal-div">
   <div class="row">
     <!-- div for the portal text -->
-    <div class="col-6">
+    <div class="col-6 col-sm-12">
       <img src="Assets/Images/mResLogo.svg" alt="mResLogo">
       <h3>Mobile App for First Responders</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam numquam dolorem quia pariatur tenetur nulla eaque quis, labore placeat soluta mollitia aliquid, repellat fuga, animi quas iste maxime dolor.</p>
@@ -241,8 +241,8 @@
     </div>
 
     <!-- div for the Feature images -->
-    <div class="col-6" style = "text-align: center">
-      <img src="Assets/Images/03phone_preview1.png" alt="feature1">
+    <div class="col-6 col-sm-12" style = "text-align: center">
+      <img id= 'portalImg' src="Assets/Images/portal.png" alt="portalImg">
 
     </div>
   </div>
@@ -267,21 +267,21 @@
       </div>
 
       <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label>
+      <!-- <label form="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label> -->
         <div class="col-lg-12">
           <input type="text" class="form-control form-control" id="user-name" placeholder="name">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
+        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label"></label> -->
         <div class="col-lg-12">
           <input type="text" class="form-control" id="user-last-name" placeholder="last name">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
+        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
         <div class="col-lg-12">
 
           <input type="email" class="form-control form-control" id="user-email" placeholder="email">
@@ -289,7 +289,7 @@
       </div>
 
       <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
+        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
         <div class="col-lg-12">
           <label for="message"></label>
           <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes">
@@ -300,7 +300,7 @@
 
     <!---- SUBMIT BUTTON ---->
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label>
+      <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
       <div class="col-lg-12">
 
         <button type="submit" class="btn btn-primary" id="send">submit</button>
@@ -312,7 +312,13 @@
 
 </div>
 
-</div>
+
+</div>  <!--closes <div class= "col-lg-12" id="back-form" class="col-12">-->
+
+
+
+
+
 
 
 <!--06 Articles goes here-->
