@@ -217,20 +217,26 @@ div.form-group.row{
 #about {
     background-color: #EFEFEF;
     color:#001365;
+    
     }
-#whoWeAre {
+    .test {
+        margin: 0 100px;
+    }
+    
+#whoWeAre{
     font-family: 'Titillium Web', sans-serif;
 }
 
-#whoWeareP {
+#whoWeareP{
+    /* margin-left: 10em; */
     font-family: 'Open Sans', sans-serif;
 }
 
-#haveIdeas {
+#haveIdeas{
     font-family: 'Titillium Web', sans-serif;
 }
 
-#haveIdeasP {
+#haveIdeasP{
     font-family: 'Open Sans', sans-serif;
 }
 
