@@ -226,6 +226,41 @@ div.form-group.row{
     color:#001365;
 }
 
+/* articles section */
+
+div.card-header{
+    color: #001365;
+    font-weight: bold;
+    background-color: #EFEFEF;
+}
+
+label{
+    color: #001365;
+}
+
+#run-search{
+    background-color: #001365;
+    color:white;
+}
+#clear-all{
+    background-color: #001365;
+    color:white;
+}
+
+#run-search:hover{
+    background-color: #EFEFEF;
+    color:#001365; 
+}
+
+#clear-all:hover{
+    background-color: #EFEFEF;
+    color:#001365; 
+}
+
+div.col-sm-12{
+    margin-bottom:1em;
+
+  
 /*07 About*/
 #about {
     background-color: #EFEFEF;
