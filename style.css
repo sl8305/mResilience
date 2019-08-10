@@ -1,22 +1,41 @@
 body {
-width: 100%;
+    /*  APPLIES OPEN SANS WITH GREY COLOR TO WHOLE PAGE */
+    /*  Desired effect is making all text the grey and sans */
+    font-family: 'Open Sans', sans-serif;
+    color: #3e3e3e;
+    width: 100%;
+    font-weight: normal;
+}
+
+/*  CLASS FOR TITILLIUM FONT WITH BLUE COLOR */
+.secondFont {
+    font-family: 'Titillium Web', sans-serif;
+    color: #001365;
+    font-weight: bold;
+}
+
+/*  CLASS FOR INVERTED HEADER */
+.invert {
+    margin-top: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #eeeeee;
+    background-color: #001365;
+    padding: 10px;
+    padding-left: 15px;
 }
 
 /* 01 Nav */
 nav {
-font-family: 'Titillium Web', sans-serif;
-color: #001365;
-background-color: #efefef;
-border-bottom: 2px solid #001365;
+    background-color: #efefef;
+    border-bottom: 2px solid #001365;
 }
 
 .nav-link {
     margin-right: 15px;
-    }
-
-.nav-link h5 {
-    font-family: 'Titillium Web', sans-serif;
-    color: #001365;
+    padding: 5px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
     }
 
 .nav-link h5:hover {
@@ -25,159 +44,35 @@ border-bottom: 2px solid #001365;
     background-color: #001365;
     }
 
-.nav-link:hover {
-    background-color: #001365;
-        }
-
-#nav-fb {
-    margin-right: 10px;
-    margin-top: 0px;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    }
-
-#nav-tiag {
-    margin-top: 0px;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    }
-
 /* 02 Main Section */
-
-    #main h4 {
-        margin-top: 30px;
-        color: #001365;
-        font-family: 'Titillium Web', sans-serif;
-    }
-    
-    #mResLogo {
-        margin-top: 100px;
-    }
-    #leadText {
-        font-family: 'Open Sans', sans-serif;
-        color: #3e3e3e;
-    }
-    
-    #mainBottomImage {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-
-/* 03 Why Section*/
-
-    #challengesHeader {
-    margin-top: 15px;
-    font-family: 'Titillium Web', sans-serif;
-    color: #eeeeee;
-    background-color: #001365;
+#main h4 {
+    margin-top: 30px;
 }
 
-    #solutionHeader {
-    margin-top: 10px;
-    font-family: 'Titillium Web', sans-serif;
-    color: #eeeeee;
-    background-color: #001365;
+#mResLogo {
+    margin-top: 100px;
 }
 
-#challengeStatement {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
+#mainBottomImage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
-#solutionStatement {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
+/* Bullet points */
+.checkBullets {
+    list-style-image: url('Assets/Images/02checkmark.svg');
 }
 
-#stressSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
+.exPt {
+    list-style-image: url('Assets/Images/02exclamation.svg');
 }
 
-#challengesSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#whymResSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#programSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#visionSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-/* 02 Why Section: Bullet points*/
-
-
-#stressbullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-    font-weight: normal;
-    list-style-image: url('Assets/Images/02checkmark.svg')
-}
-
-#stressbullets2 {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-    font-weight: normal;
-    list-style-image: url('Assets/Images/02checkmark.svg')
-}
-
-#challengebullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-    font-weight: normal;
-    list-style-image: url('Assets/Images/02exclamation.svg')
-}
-
-#solutionbullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-    font-weight: normal;
-}
-
-#whyBullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-    font-weight: normal;
+.arrow {
     list-style-image: url('Assets/Images/02arrow.svg')
 }
-
-#offerBullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
-    font-weight: normal;
-    list-style-image: url('Assets/Images/02arrow.svg')
-}
-
-#visionBullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
-    font-weight: normal;
-    list-style-image: url('Assets/Images/02arrow.svg')
-}
-
-
 
 /* want to learn more and form */
-
 #learn-more{
     margin-left:1em;
 }
@@ -227,7 +122,6 @@ div.form-group.row{
 }
 
 /* articles section */
-
 div.card-header{
     color: #001365;
     font-weight: bold;
@@ -259,17 +153,17 @@ label{
 
 div.col-sm-12{
     margin-bottom:1em;
+}
 
-  
 /*07 About*/
 #about {
     background-color: #EFEFEF;
     color:#001365;
-    
-    }
-    .test {
-        margin: 0 100px;
-    }
+}
+
+.test {
+    margin: 0 100px;
+}
     
 #whoWeAre{
     margin-top: 15px;
@@ -327,4 +221,6 @@ h3 {
 
 #portalImg {
     width:100%;
+    height:auto;
+    padding-top: 80px;
 }
