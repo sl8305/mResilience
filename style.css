@@ -123,42 +123,55 @@ border-bottom: 2px solid #001365;
     font-family: 'Titillium Web', sans-serif;
 }
 
-/* Bullet points of Why Section*/
+/* 02 Why Section: Bullet points*/
 
 
 #stressbullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02checkmark.svg')
 }
 
 #stressbullets2 {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02checkmark.svg')
 }
 
 #challengebullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02exclamation.svg')
 }
 
 #solutionbullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
 }
 
 #whyBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e; 
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 #offerBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e;
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 #visionBullets {
     font-family: 'Open Sans', sans-serif;
     color: #3e3e3e;
+    font-weight: normal;
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 
@@ -213,7 +226,7 @@ div.form-group.row{
     color:#001365;
 }
 
-/*About*/
+/*07 About*/
 #about {
     background-color: #EFEFEF;
     color:#001365;
@@ -224,6 +237,7 @@ div.form-group.row{
     }
     
 #whoWeAre{
+    margin-top: 15px;
     font-family: 'Titillium Web', sans-serif;
 }
 
