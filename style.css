@@ -166,11 +166,11 @@ border-bottom: 2px solid #001365;
 /* want to learn more and form */
 
 #learn-more{
-    margin-left:2em;
+    margin-left:1em;
 }
 
 #back-form{
-    margin-left:4em;
+    margin-left:2em;
 }
 #learn-more.container.learn-more{
     margin-top: 3em;
@@ -186,7 +186,7 @@ border-bottom: 2px solid #001365;
     color:#3e3e3e;
 }
 
-form#back-form.col-6{
+div.form-group.row div.col-lg-12 input{
     border-style: none;
     border-bottom: 1px solid #ced4da;
     margin-bottom: .25em;
