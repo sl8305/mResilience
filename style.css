@@ -178,16 +178,14 @@ border-bottom: 2px solid #001365;
 
 /* want to learn more and form */
 
-#learn-more{
-    margin-left:1em;
+div.container div#back-form.col-lg-12 div#learn-more.container.learn-more div p{
+    padding-right: 2em;
 }
 
-#back-form{
-    margin-left:2em;
-}
 #learn-more.container.learn-more{
     margin-top: 3em;
     display: flex;
+    justify-content: space-between
 }
 
 #learn-more.container h5{
