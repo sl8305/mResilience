@@ -265,4 +265,11 @@ h3 {
 
 #portal-div{
     color:#3e3e3e;
+    background:#efefef;
+    width:100%;
+    padding:20px;
+}
+
+#portalImg {
+    width:100%;
 }
