@@ -47,11 +47,14 @@ border-bottom: 2px solid #001365;
 /* 02 Main Section */
 
     #main h4 {
-        margin-top: 100px;
+        margin-top: 30px;
         color: #001365;
         font-family: 'Titillium Web', sans-serif;
     }
     
+    #mResLogo {
+        margin-top: 100px;
+    }
     #leadText {
         font-family: 'Open Sans', sans-serif;
         color: #3e3e3e;
@@ -66,14 +69,14 @@ border-bottom: 2px solid #001365;
 
 /* 03 Why Section*/
 
-#challengesHeader {
+    #challengesHeader {
     margin-top: 15px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
     background-color: #001365;
 }
 
-#solutionHeader {
+    #solutionHeader {
     margin-top: 10px;
     font-family: 'Titillium Web', sans-serif;
     color: #eeeeee;
@@ -158,43 +161,44 @@ border-bottom: 2px solid #001365;
     color: #3e3e3e;
 }
 
+
+
 /* want to learn more and form */
 
-div.col-3{
-    margin-top: 1em;
-    float: right;
+#learn-more{
+    margin-left:2em;
 }
 
-div.col-3 p.col-lg-8{
-    padding-right:0px;
-    margin-left: 30px;
-    text-align: justify;
-    width: 100%;
-    height: 235px;;
-    overflow: auto;
-    color:#3e3e3e;
+#back-form{
+    margin-left:4em;
 }
-div.col-3 h5{
-    margin-left: 30px;
+#learn-more.container.learn-more{
+    margin-top: 3em;
+    display: flex;
+}
+
+#learn-more.container h5{
     color: #001365;
 }
 
-form{
-    margin-top: 1em;
-    float: right;
-    margin-right:5%;
+#learn-more h5{
+    width: 50%;
+    color:#3e3e3e;
 }
 
-.col-sm-12 input{
-    border-radius: none;
+form#back-form.col-6{
     border-style: none;
     border-bottom: 1px solid #ced4da;
+    margin-bottom: .25em;
 }
+
 div.form-group.row{
     margin-bottom: .25em;
 }
+
 #message{
     border-radius: 8px;
+    height: 8em;
 }
 
 #send{
@@ -208,6 +212,28 @@ div.form-group.row{
     background-color: #EFEFEF;
     color:#001365;
 }
+
+/*About*/
+#about {
+    background-color: #EFEFEF;
+    color:#001365;
+    }
+#whoWeAre {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#whoWeareP {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#haveIdeas {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#haveIdeasP {
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 /*Footer*/
 
