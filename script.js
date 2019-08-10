@@ -29,8 +29,6 @@ Request request = new Request.Builder()
 Response response = client.newCall(request).execute();
 
 
-
-
 // click event on submit button will get contact() to run
 $('#send').on('click', function (stop) {
     stop.preventDefault(); 
@@ -38,6 +36,7 @@ $('#send').on('click', function (stop) {
 
     // code source can be found here: https://www.smtpjs.com/
 // code with encryption available
+
 Email.send({
     Host: 'smtp25.elasticemail.com',  // for testing
     Username: 'marinocarranza@hotmail.com',  // from user input, do we need it?
@@ -53,10 +52,10 @@ Email.send({
 
 
     
-    // console.log('name : ', name);
-    // console.log('last name : ', lastName);
-    // console.log('email : ', emailAddress);
-    // console.log('comments : ', comments);
+    console.log('name : ', name);
+    console.log('last name : ', lastName);
+    console.log('email : ', emailAddress);
+    console.log('comments : ', comments);
 });
 
 
