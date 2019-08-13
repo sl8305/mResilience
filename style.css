@@ -85,6 +85,11 @@ nav {
     display: flex;
 }
 
+.input-row {
+    margin-top:10px;    
+    margin-bottom:10px;
+}
+
 #learn-more.container h5{
     color: #001365;
 }
