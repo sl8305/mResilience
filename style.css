@@ -26,12 +26,10 @@ body {
 }
 
 /* 01 Nav */
-
 /*scroll animation for Chrome and FoxFire*/
 html {
     scroll-behavior: smooth;
 }
-
 
 nav {
     background-color: #efefef;
@@ -56,7 +54,6 @@ nav {
     }
 
 /* 02 Main Section */
-
 #main h4 {
     margin-top: 30px;
 }
