@@ -8,12 +8,13 @@ var comments;
 
 
 // function to gather the contact info
-function contact() {
-    name = $('#user-name').val().trim();
-    lastName = $('#user-last-name').val().trim();
-    emailAddress = $('#user-email').val().trim();
-    comments = $('#message').val().trim();
-}
+// function contact() {
+//     name = $('#user-name').val().trim();
+//     lastName = $('#user-last-name').val().trim();
+//     emailAddress = $('#user-email').val().trim();
+//     comments = $('#message').val().trim();
+// }
+
 
 
 // Email Validation

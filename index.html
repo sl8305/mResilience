@@ -15,8 +15,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <script type ="emailVali.js"></script>
-
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     
 
     
@@ -27,326 +27,404 @@
 
   <body>
 
-<!--01 Nav-->
-    <nav class="navbar navbar-expand-lg nav-bg-color navbar-light" id="nav">
-       <a class="navbar-brand" href="#"><img src="assets/images/mResFullLogo.svg" alt="mResilience Logo" class="img-fluid"></a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-       </button>
+  <!-- 01 Nav -->
+  <nav class="navbar navbar-expand-lg nav-bg-color navbar-light" id="nav">
+    <a class="navbar-brand" href="#"><img src="assets/images/mResFullLogo.svg" alt="mResilience Logo" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <!--Start of NavBar links-->
-       <div class="collapse navbar-collapse titillium-font" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
 
-    <!--NavBar Main Link-->
-             <li class="nav-item">
-                <a class="nav-link" href="#main"><h5>Main</h5><span class="sr-only">(current)</span></a>
-             </li>
+    <div class="collapse navbar-collapse titillium-font" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
 
-    <!--NavBar Why Link-->
-            <li class="nav-item">
-                <a class="nav-link" href="why"><h5>The Why</h5></a>
-             </li>  
-    <!--NavBar Features Link-->
-            <li class="nav-item">
-                <a class="nav-link" href="features"><h5>Features</h5></a>
-             </li>   
+      <!--NavBar Main Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="#main"><h5 class= "secondFont">Main</h5><span class="sr-only">(current)</span></a>
+        </li>
 
-    <!--NavBar Articles Link-->
-            <li class="nav-item">
-                <a class="nav-link" href="articles"><h5>Articles</h5></a>
-              </li>  
+      <!--NavBar Why Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="why"><h5 class= "secondFont">The Why</h5></a>
+        </li>  
+    
+      <!--NavBar Features Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="features"><h5 class= "secondFont">Features</h5></a>
+        </li>   
 
-    <!--NavBar Contact Link-->
-            <li class="nav-item">
-                <a class="nav-link" href="contact"><h5>Contact</h5></a>
-              </li>  
+      <!--NavBar Articles Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="articles"><h5 class= "secondFont">Articles</h5></a>
+        </li>  
 
-		<!--NavBar About Link-->
-            <li class="nav-item">
-                    <a class="nav-link" href="#about"><h5>About</h5></a>
-                </li>
-    <!--NavBar Facebook Link-->
-           <li class="nav-item" id="nav-fb">
-            <a href="https://www.facebook.com/mresilience/"  target= "_blank" class="nav-link"><img src="Assets/Images/Facebook.svg" alt="facebook logo"></a>
-            </li>
-    <!--NavBar TIAG Link to www.tiag.net-->
-          <li class="nav-item" id="nav-tiag">
+      <!--NavBar Contact Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="contact"><h5 class= "secondFont">Contact</h5></a>
+        </li>  
+
+	  	<!--NavBar About Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="#about"><h5 class= "secondFont">About</h5></a>
+        </li>
+    
+      <!--NavBar Facebook Link-->
+        <li class="nav-item" id="nav-fb">
+          <a href="https://www.facebook.com/mresilience/"  target= "_blank" class="nav-link"><img src="Assets/Images/Facebook.svg" alt="facebook logo"></a>
+        </li>
+    
+      <!--NavBar TIAG Link to www.tiag.net-->
+        <li class="nav-item" id="nav-tiag">
+
           <a href="http://tiag.net" target="_blank" class="nav-link"><img src="Assets/Images/TIAGlogo.svg" height="25Spx" alt="TIAG logo"></a>
         </li>	
       </ul>
-
     </div>
-    </nav>
+  </nav>
 
-   
-    <!--02 Main--> 
-    <div class="row" id="main">
-        <div class="col-7"><img src="Assets/Images/01MainPhone.png" width="100%"> </div>
-        <div class="align-left col-5 ml-auto">
-          <img src="Assets/Images/mResLogo.svg" alt="mResLogo" id="mResLogo">
-          <h4>Mobile App for First Responders</h4>
-            <p class="lead" id="leadText">A customizable resilience-building app available 24/7 that provides direct access to peer support, department supported resources, and stress management tools.</p>
-            </div>
-        <div class="col-12" id="mainBottomImage">
-          <img src="Assets/Images/02MainFooterImage.png" id="mainBottomImage" alt="image of first responders">
+  <!-- 02 Main --> 
+  <div class="row" id="main">
+    <div class="col-7"><img src="Assets/Images/01MainPhone.png" width="100%"> </div>
+      <div class="align-left col-5 ml-auto">
+        <!-- Beginning header image and opening paragraph -->
+        <img src="Assets/Images/mResLogo.svg" alt="mResLogo" id="mResLogo">
+        <h4 class= "secondFont">Mobile App for First Responders</h4>
+          <p class="lead" id="leadText">A customizable resilience-building app available 24/7 that provides direct access to peer support, department supported resources, and stress management tools.</p>
+      </div>
+
+      <div class="col-12" id="mainBottomImage">
+        <img src="Assets/Images/02MainFooterImage.png" id="mainBottomImage" alt="image of first responders">
       </div>
     </div>
-    <!-- </div> -->
- 
-  <div class="container">  
-<!--03 The Why--> 
-    <div id="why">
-    <div class="row">
-        <div class="col-12">
+  </div>
 
-  <!--03A: First Responder Challenges section-->
-        <div class="row">
-          <div class="col-12" id="challengesHeader">
-            <h4>First Responder Challenges</h4>
+  <!-- 03 The Why --> 
+  <div id="why" class="container">  
+    <div class="row">
+      <div class="col-12">
+        <!-- 03A: First Responder Challenges section-->
+        <div id= "3A">
+          <div class="row">
+            <div class="col-12" id="challengesHeader">
+              <h4 class= "invert">First Responder Challenges</h4>
             </div>
           </div>
 
-        
-        <div class="row" id="challengeStatement">
+          <!-- 03A: First Responder Challenges text -->
+          <div class="row" id="challengeStatement">
             <div class="col-12">
-              <p>First responders put resilience to the test every day. The ability to “bounce back” is critical to do the work of protecting and saving lives. But the challenges of first responder work hit at the core. <b>Strengthening</b> and <b>maintaining resilience</b> are the cornerstone of any prevention program.
-              </p>
+              <p>First responders put resilience to the test every day. The ability to “bounce back” is critical to do the work of protecting and saving lives. But the challenges of first responder work hit at the core. <b>Strengthening</b> and <b>maintaining resilience</b> are the cornerstone of any prevention program. </p>
             </div>
-        </div>
+          </div>
 
-        <div class="row" id="titles">
-            <div class="col-6" id="stressSubHeader"><h4>Effects of Stress & Trauma</h4>
-              <div class="row">
-              <div class="col-5" id="stressbullets">
-                  <ul>
+          <!-- 03A: Bullet Points -->
+          <div class="row" id="titles">
+            <!-- STRESS SECTION -->
+            <div class="col-6" id="stressSubHeader">
+              <h4 class= "secondFont">Effects of Stress & Trauma</h4>
+              <!-- STRESS PTS -->
+              <div class="row">  
+                <!-- STRESS BULLET POINTS I-->
+                <div class="col-6" >
+                  <ul class="checkBullets">
                     <li>Burnout</li>
                     <li>Obesity</li>
                     <li>Substance Abuse</li>
                     <li>PTSD</li>
                     <li>Depression</li>
-              
                   </ul>
-              </div>
-      
-                <div class="col-6" id="stressbullets2">
-                  <ul>
-                  <li>Anxiety</li>
-                  <li>Domestic Abuse</li>
-                  <li>Suicide</li>
-                  <li>Poor cardiac health</li>
-                  <li>Agitation/Anger</li>
-                </ul>
+                </div>
+                <!-- STRESS BULLET POINTS PT II-->
+                <div class="col-6" >
+                  <ul class="checkBullets">
+                    <li>Anxiety</li>
+                    <li>Domestic Abuse</li>
+                    <li>Suicide</li>
+                    <li>Poor cardiac health</li>
+                    <li>Agitation/Anger</li>
+                  </ul>
+                </div>
               </div>
             </div>
-      </div>
-            <!-- End of Effects of Stress section -->
 
+            <!-- DEPARTMENT SECTION -->
             <div class="col-6" id="challengesSubHeader">
-              <h4>Department Challenges</h4>
+              <h4 class= "secondFont">Department Challenges</h4>
               <div class="row">
-                  <div class="col-12" id="challengebullets"><ul>
-                      <li>Impact of stress on productivity, performance and retention</li>
-                      <li>Cost-effective ways to address the mental challenges of the job</li>
-                      <li>The stigma against seeking psychological help</li>
-                    </ul>
-                  </div>
+                <!-- DEPARTMENT PTS -->
+                <div class="col-12" id="challengebullets">
+                  <ul class= "exPt">
+                    <li>Impact of stress on productivity, performance and retention</li>
+                    <li>Cost-effective ways to address the mental challenges of the job</li>
+                    <li>The stigma against seeking psychological help</li>
+                  </ul>
+                </div>
               </div> 
-            </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- End of Why Section -->
-
-  <!--03B: The Solution Section-->
-    <div class="row">
-      <div class="col-12" div id="solutionHeader"><h4>The Solution</h4>
-      </div>
-    </div>   
-
-    <div class="row" id="solutionStatement">
-      <div class="col-12">
-        <p>mResilience is a customized program, licensed to first responder agencies to develop, maintain, and rebuild psychological resilience. It’s a combination of <b>in-person training</b> and <b>a companion mobile application</b>.
-        </p>
-      </div>
-    </div>    
-        
-    <div class="row" id="titles2">
-      <div class="col-6" id="whymResSubHeader"><h4>Why mResilience</h4>
-        <div class="row">
-          <div class="col-12">
-             <div id="whyBullets"><ul>
-                <li>Capitalize on the values of officers</li>
-                <li>Provides access to department, local and national resources</li>
-                <li>Discreet and personal tools to build and support resiliency</li>
-                <li>Use the App is 100% confidential</li>
-                <li>Available 24/7</li>
-              </ul> 
             </div>
           </div>
         </div>
       </div>
-      
-        <!-- <div id="programOffers"> -->
-        <div class="col-6" id="programSubHeader">
-          <h4>Program Offers</h4>
-          <div class="row">
-              <div class="col-12">
-                <div id="offerBullets">
-                  <ul>
-                      <li>Customizable, resilience-building mobile app</li>
-                      <li>In-person resilience training tailored to department’s needs</li>
-                      <li>Administrative web portal for direct, easy updates to key app features</li>
-                      <li>Stress management and performance-enhancing tools</li>
-                      <li>Ways to connect to Peer Support team members within the department</li>
-                    </ul> 
-                  </div>
-              </div>
-          </div>     
-        </div>
-        <!-- </div> -->
-      </div>
-      
+    </div>
 
-  <div class="row">
-    <div class="col-12" id="visionSubHeader">
-          <h4>Vision</b></h4>
+    <!--03B: The Solution Section-->
+    <div id= "3B">
+      <!-- Solution Title -->
+      <div class="row">
+        <div class="col-12" div id="solutionHeader"><h4 class= "invert">The Solution</h4>
+        </div>
+      </div>   
+
+      <!-- Solution Statement -->
+      <div class="row" id="solutionStatement">
+        <div class="col-12">
+          <p>mResilience is a customized program, licensed to first responder agencies to develop, maintain, and rebuild psychological resilience. It’s a combination of <b>in-person training</b> and <b>a companion mobile application</b>.</p>
+        </div>
+      </div>    
+
+      <!-- Solution Bullet Points -->
+      <div class="row" id="titles2">
+        <div class="col-6" id="whymResSubHeader"><h4 class= "secondFont">Why mResilience</h4>
           <div class="row">
             <div class="col-12">
-              <div id="visionBullets">
-              <ul>
+              <div id="whyBullets">
+                <ul class= ".arrow">
+                  <li>Capitalize on the values of officers</li>
+                  <li>Provides access to department, local and national resources</li>
+                  <li>Discreet and personal tools to build and support resiliency</li>
+                  <li>Use the App is 100% confidential</li>
+                  <li>Available 24/7</li>
+                </ul> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div id="programOffers"> -->
+        <div class="col-6" id="programSubHeader">
+          <h4 class= "secondFont">Program Offers</h4>
+            <div class="row">
+              <div class="col-12">
+                <div id="offerBullets">
+                  <ul class= "arrow">
+                    <li>Customizable, resilience-building mobile app</li>
+                    <li>In-person resilience training tailored to department’s needs</li>
+                    <li>Administrative web portal for direct, easy updates to key app features</li>
+                    <li>Stress management and performance-enhancing tools</li>
+                    <li>Ways to connect to Peer Support team members within the department</li>
+                  </ul> 
+                </div>
+              </div>
+            </div>     
+          </div>
+      </div>
+
+      <!-- Vision Bullet Points -->
+      <div class="row">
+        <div class="col-12" id="visionSubHeader">
+          <h4 class= "secondFont">Vision</h4>
+          <div class="row">
+            <div class="col-12">
+              <ul class= "arrow">
                 <li>First Responders can navigate difficult situations and stay resilient</li>
                 <li>Effective stress management and performance-enhancing tools on-the-go</li>
                 <li>Department programs are reinforced through improved access</li>
                 <li>The program helps reverse trends of stress-related challenges for officers</li>
               </ul> 
-
             </div>
           </div> 
         </div>
       </div>
-  </div>
-</div> <!---- Div Container ---->
-<br>
+    </div>
+    </div>
+  </div> 
+
 <br>
 <br>
 
-<!---- 04 PORTAL DIV ---->
-<div class= "container" id= "portal-div">
+  <!-- 04 PORTAL DIV -->
+<div id= "portal-div">
   <div class="row">
     <!-- div for the portal text -->
-    <div class="col-6 col-sm-12">
-      <img src="Assets/Images/mResLogo.svg" alt="mResLogo">
-      <h3>Mobile App for First Responders</h3>
+    <div class="col-lg-6 col-sm-12">
+      <img style= "height: 25%; margin-bottom: 20px" src="Assets/Images/portallogo.svg" alt="mResLogo">
+      <h4 class= "secondFont">Mobile App for First Responders</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam numquam dolorem quia pariatur tenetur nulla eaque quis, labore placeat soluta mollitia aliquid, repellat fuga, animi quas iste maxime dolor.</p>
       
-      <h3>Key Features</h3>
+      <h4 class= "secondFont">Key Features</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iure facilis amet magni. Cupiditate alias unde, quis numquam nisi, id eligendi temporibus quaerat totam voluptas, atque dolores hic fugiat dolor.</p> 
     </div>
 
     <!-- div for the Feature images -->
-    <div class="col-6 col-sm-12" style = "text-align: center">
+    <div class="col-lg-6 col-sm-12" style = "text-align: center">
       <img id= 'portalImg' src="Assets/Images/portal.png" alt="portalImg">
-
     </div>
   </div>
 </div>
 
 <!---- 05 Contact Form ---->
-
-    <div class= "col-lg-12" id="back-form" class="col-12">
-        
-  <div class= "container learn-more" id="learn-more">
-    <div>
-      <h5 class="">Want to learn more?</h5>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae.</p>
-  </div>
-
-    <form class= "col-6" id="back-form">
-      
-      <div class="form-group row">
-        <div class="col-lg-12">
-          <input type="text" class="form-control form-control" id="user-dept" placeholder="Dept">
-        </div>
-      </div>
-
-      <div class="form-group row">
-      <!-- <label form="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label> -->
-        <div class="col-lg-12">
-          <input type="text" class="form-control form-control" id="user-name" placeholder="name">
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label"></label> -->
-        <div class="col-lg-12">
-          <input type="text" class="form-control" id="user-last-name" placeholder="last name">
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
-        <div class="col-lg-12">
-
-          <input type="email" class="form-control form-control" id="user-email" placeholder="email">
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
-        <div class="col-lg-12">
-          <label for="message"></label>
-          <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes">
-          </textarea>
-        </div>
-      </div>
-
-
-    <!---- SUBMIT BUTTON ---->
-    <div class="form-group row">
-      <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
-      <div class="col-lg-12">
-
-        <button type="submit" class="btn btn-primary" id="send">submit</button>
-
-      </div>
+<div class="container">
+  <div class="row">
+    <div class= "col-lg-6 col-sm-12 contactForm">
+      <h5 class="secondFont">Want to learn more?</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae.</p>
     </div>
 
-  </form>
+    <form class= "col-lg-6 col-sm-12" id="back-form">
+      <!-- INPUT SECTION -->
+      <div class="form-group" >
+        <!-- Department input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+          <input type="text" class="form-control input-border" id="user-dept" placeholder="Department">
+          </div>
+        </div>
 
+        <!-- First name input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+            <input type="text" class="form-control input-border" id="user-name" placeholder="First Name">
+          </div>
+        </div>
+
+        <!-- Last name input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+            <input type="text" class="form-control input-border" id="user-last-name" placeholder="Last name">
+          </div>
+        </div>
+
+        <!-- Email input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+            <input type="email" class="form-control input-border" id="user-email" placeholder="Email">
+          </div>
+        </div>
+
+        <!-- Notes input -->
+        <div class="row">
+          <div class="col-lg-12">
+            <label for="message"></label>
+            <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes">
+            </textarea>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="row">
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-primary" id="send">submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
-
-</div>  <!--closes <div class= "col-lg-12" id="back-form" class="col-12">-->
-
-
-
-
-
-
-
 <!--06 Articles goes here-->
+<div class="container">
+  <div class="col-sm-12">
+    <br>
+    <!-- First card is for handling the search parameters -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fa fa-list-alt"></i> Search Parameters
+      </div>
+
+      <div class="card-body">
+
+        <!-- Here we create an HTML Form for handling the inputs-->
+        <form role="form">
+
+          <!-- Here we create the text box for capturing the search term-->
+          <div class="form-group">
+            <label for="search">Search Term:</label>
+            <input type="text" class="form-control" id="search-term">
+          </div>
+
+          <!-- Here we capture the number of records that the user wants to retrieve  -->
+          <div class="form-group">
+            <label for="pwd">Number of Records to Retrieve:</label>
+            <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+              <option selected value="1">1</option>
+              <!-- Setting the option for 5 as default -->
+              <option value="5" selected>5</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <!-- Here we capture the Start Year Parameter-->
+          <div class="form-group">
+            <label for="start-year">Start Year (Optional):</label>
+            <input type="text" class="form-control" id="start-year">
+          </div>
+
+          <!-- Here we capture the End Year Parameter -->
+          <div class="form-group">
+            <label for="end-year">End Year (Optional):</label>
+            <input type="text" class="form-control" id="end-year">
+          </div>
 
 
+          <!-- Here we have our final submit button -->
+          <div>
+            <button type="submit" class="btn btn-default button-format" id="run-search">
+              <i class="fa fa-search"></i> Search</button>
+            <button class="btn btn-default button-format" id="clear-all">
+              <i class="fa fa-trash"></i> Clear Results</button>
+          </div>
+        </form>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- This row will handle all of the retrieved articles -->
+<div id="article-div">
+  <div class="col-sm-12">
+    <br>
+
+    <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
+    <div class="card">
+
+      <!-- card Heading for the retrieved articles box -->
+      <div class="card-header">
+        <strong>
+          <i class="fa fa-table"></i> Top Articles</strong>
+      </div>
+
+      <!-- This main card will hold each of the resulting articles -->
+      <div class="card-body" id="article-section">
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--07 About TIAG goes here-->
-<div id="about">
-<div class="row test">
+<div id="about" class="container">
+  <div class="row">
+    <div id = "whoWeAre"   style="margin-top:15px">
+      <h4 class="secondFont"><b>Who are we?</b>  We build technologies that work.</h4></div>
+      <div id = "whoWeAreP">
+        <p>We are a team of innovators. With 20 years’ worth of experience TIAG has developed a leading reputation in researching, designing and developing resilience-based technology products for the military, government and most recently, the first responder communities. Our staff are experts comprising program and project managers, subject matter experts, researchers, designers and developers. Collectively, we bring a comprehensive approach to advising and creating relevant resilience-based technology services, programs and products.</p>
+      </div>
 
-    <div id = "whoWeAre"><h4><b>Who are we?</b> We build technologies that work.</h4></div>
-      <div id = "whoWeAreP"><p>We are a team of innovators. With 20 years’ worth of experience TIAG has developed a leading reputation in researching, designing and developing resilience-based technology products for the military, government and most recently, the first responder communities. Our staff are experts comprising program and project managers, subject matter experts, researchers, designers and developers. Collectively, we bring a comprehensive approach to advising and creating relevant resilience-based technology services, programs and products.
-      </p></div>
-  <br>
-    <div id="haveIdeas"><h4><b>Have ideas?</b> Come innovate with us!</h4></div>
-      <div id= "haveIdeasP"><p>Our resilience program is just the beginning and is rapidly evolving. Creating first responder-focused resilience solutions does not happen without collaboration with those who protect our communities. Do you have ideas to evaluate resilience? Want to create a digital tool or feature to help your department or agency thrive? We want to work with you.
-      </p>
+      <br>
+      <br>
+
+      <div id="haveIdeas">
+        <h4 class="secondFont"><b>Have ideas?</b> Come innovate with us!</h4>
+      </div>
+
+      <div id= "haveIdeasP">
+        <p>Our resilience program is just the beginning and is rapidly evolving. Creating first responder-focused resilience solutions does not happen without collaboration with those who protect our communities. Do you have ideas to evaluate resilience? Want to create a digital tool or feature to help your department or agency thrive? We want to work with you.</p>
+      </div>
+      
+      <br>
     </div>
-    <br>
-  </div> <!--div class-->
+  </div>
 </div>
-
-    
 
   <!-- FOOTER FOR THE WEBSITE -->
   <footer class="footer">
@@ -379,19 +457,21 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-  
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- commented out to make nytimes api work -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   
-
-    <!-- the validation script probably needs to be before this line -->
+    
     <!-- script link to send email from contact form to tiag -->
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     
     <script src="script.js"></script>
+    <script src="articles.js"></script>
 
   </body>
 </html>
