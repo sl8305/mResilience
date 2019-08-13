@@ -16,7 +16,6 @@ var comments;
 // }
 
 
-
 // Email Validation
 
 function validateEmail() {

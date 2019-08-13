@@ -7,6 +7,7 @@ body {
     font-weight: normal;
 }
 
+
 /*  CLASS FOR TITILLIUM FONT WITH BLUE COLOR */
 .secondFont {
     font-family: 'Titillium Web', sans-serif;
@@ -25,9 +26,17 @@ body {
 }
 
 /* 01 Nav */
+/*scroll animation for Chrome and FoxFire*/
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     background-color: #efefef;
     border-bottom: 2px solid #001365;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-link {
