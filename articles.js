@@ -3,45 +3,46 @@
  * pulls information from the form and build the query URL
  * @returns {string} URL for NYT API based on form inputs
  */
-var limitTo = "Wellness";
+// var limitTo = "Wellness";
 
 function buildQueryURL() {
   // queryURL is the url we'll use to query the API
-  var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
+  var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=police+suicide&";
 
   // Begin building an object to contain our API call's query parameters
   // Set the API key
   var queryParams = {
-    "api-key": "R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M"
+    "api-key": "PCYSvS2fpuDcpXjr0GIr8R4HdnivPXAk"
   };
 
   // Grab text the user typed into the search input, add to the queryParams object
-  queryParams.input = $("#search-term")
+  queryParams.q = $("#search-term")
     .val()
     .trim();
 
   // If the user provides a startYear, include it in the queryParams object
-  var startYear = $("#start-year")
-    .val()
-    .trim();
+  // var startYear = $("#start-year")
+  //   .val()
+  //   .trim();
 
-  if (parseInt(startYear)) {
-    queryParams.begin_date = startYear + "0101";
-  }
+  // if (parseInt(startYear)) {
+  //   queryParams.begin_date = startYear + "0101";
+  // }
 
   // If the user provides an endYear, include it in the queryParams object
-  var endYear = $("#end-year")
-    .val()
-    .trim();
+  // var endYear = $("#end-year")
+  //   .val()
+  //   .trim();
 
-  if (parseInt(endYear)) {
-    queryParams.end_date = endYear + "0101";
-  }
+  // if (parseInt(endYear)) {
+  //   queryParams.end_date = endYear + "0101";
+  // }
 
-  queryParams.fq = "secondary trauma";
+  // queryParams.main = "first responders";
 
   // Logging the URL so we have access to it for troubleshooting
   console.log(queryURL + $.param(queryParams));
+  // fq = news_desk: ("police") AND glocations: ("NEW YORK CITY");
   return queryURL + $.param(queryParams);
 }
 
@@ -52,8 +53,8 @@ function buildQueryURL() {
 function updatePage(NYTData) {
   // Get from the form the number of results to display
   // API doesn't have a "limit" parameter, so we have to do this ourselves
-  var numArticles = $("#article-count").val();
-
+  var numArticles = 5;
+  console.log("#of articles ", numArticles);
   // Log the NYTData to console, where it will show up as an object
   console.log(NYTData);
   console.log("------------------------------------");
@@ -123,7 +124,7 @@ function updatePage(NYTData) {
 // Function to empty out the articles
 function clear() {
   $("#article-section").empty();
-}
+};
 
 // CLICK HANDLERS
 // ==========================================================
@@ -134,6 +135,7 @@ $("#run-search").on("click", function(event) {
   // This way we can hit enter on the keyboard and it registers the search
   // (in addition to clicks). Prevents the page from reloading on form submit.
   event.preventDefault();
+
 
   // Empty the region associated with the articles
   clear();

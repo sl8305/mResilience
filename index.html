@@ -266,8 +266,8 @@
         
   <div class= "container learn-more" id="learn-more">
     <div>
-      <h5 class="">Want to learn more?</h5>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore voluptas numquam? Quidem nesciunt esse unde voluptate quod amet modi omnis ducimus. Quibusdam consequatur autem aliquam natus culpa qui repudiandae.</p>
+      <h4 class="">Interested in a Demo? Let’s Do It!</h4>
+      <p class="">Our team is excited to demonstrate our mobile resilience program and discuss how it may fit your department needs. Please complete the brief contact form and we will reach out to coordinate a time to connect. Feel free to provide any details about your department and any specific needs you would like to discuss.</p>
     </div>
 
     <form class= "col-6" id="back-form">
@@ -323,46 +323,18 @@
 <!--06 Articles goes here-->
 <!-- Row for Searching New York Times -->
 <div class="container">
-  <div class="col-sm-12">
+  <div class="col-sm-4">
     <br>
-    <!-- First card is for handling the search parameters -->
-    <div class="card">
-      <div class="card-header">
-          <i class="fa fa-list-alt"></i> Search Parameters
-      </div>
-      <div class="card-body">
 
         <!-- Here we create an HTML Form for handling the inputs-->
-        <form role="form">
+        <div id="location">
 
           <!-- Here we create the text box for capturing the search term-->
           <div class="form-group">
-            <label for="search">Search Term:</label>
-            <input type="text" class="form-control" id="search-term">
+            <!-- <label for="search">Your location</label> -->
+            <input type="text" class="form-control" placeholder="Your location" id="search-term">
           </div>
 
-          <!-- Here we capture the number of records that the user wants to retrieve  -->
-          <div class="form-group">
-            <label for="pwd">Number of Records to Retrieve:</label>
-            <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
-              <option selected value="1">1</option>
-              <!-- Setting the option for 5 as default -->
-              <option value="5" selected>5</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-
-          <!-- Here we capture the Start Year Parameter-->
-          <div class="form-group">
-            <label for="start-year">Start Year (Optional):</label>
-            <input type="text" class="form-control" id="start-year">
-          </div>
-
-          <!-- Here we capture the End Year Parameter -->
-          <div class="form-group">
-            <label for="end-year">End Year (Optional):</label>
-            <input type="text" class="form-control" id="end-year">
-          </div>
 
            <!-- Here we have our final submit button -->
            <button type="submit" class="btn btn-default" id="run-search">
@@ -374,7 +346,8 @@
 
     </div>  <!--closes <div card">-->
 
-        </form>
+    </div>  <!-- closes location-->
+        
       </div>
     </div>
   </div>
@@ -386,7 +359,7 @@
     <br>
 
 
-    <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
+    <!-- This card will initially be made up of a card for each of the articles retrieved -->
     <div class="card">
 
 
