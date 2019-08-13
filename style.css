@@ -72,35 +72,20 @@ nav {
     list-style-image: url('Assets/Images/02arrow.svg')
 }
 
-/* want to learn more and form */
 
-div.container div#back-form.col-lg-12 div#learn-more.container.learn-more div p{
-    padding-right: 2em;
+.contactForm {
+    /* margin:10px; */
+    padding:20px;
 }
 
-#learn-more.container.learn-more{
-    margin-top: 3em;
-    display: flex;
-    justify-content: space-between;
-    color: #3e3e3e;
+.input-row {
+    margin-top:10px;    
+    margin-bottom:10px;
 }
 
-#learn-more.container h5{
-    color: #001365;
-}
-
-#learn-more h4{
-    width: 75%;
-    color: #001365;
-}
-
-div.form-group.row div.col-lg-12 input{
+.input-border {
     border-style: none;
     border-bottom: 1px solid #ced4da;
-    margin-bottom: .25em;
-}
-
-div.form-group.row{
     margin-bottom: .25em;
 }
 
@@ -127,11 +112,7 @@ div.form-group.row{
     display: flex;
 }
 
-#run-search{
-    background-color: #001365;
-    color:white;
-}
-#clear-all{
+.button-format {
     background-color: #001365;
     color:white;
 }
@@ -150,38 +131,14 @@ div.col-sm-12{
     margin-bottom:1em;
 }
 
-/*07 About*/
-#about {
-    background-color: #EFEFEF;
-    color:#001365;
-}
 
-.test {
-    margin: 0 100px;
+#article-div {
+    background: #EFEFEF
 }
-    
-#whoWeAre{
-    margin-top: 15px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#whoWeareP{
-    /* margin-left: 10em; */
-    font-family: 'Open Sans', sans-serif;
-}
-
-#haveIdeas{
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#haveIdeasP{
-    font-family: 'Open Sans', sans-serif;
-}
-
 
 /*Footer*/
-
 .footer {
+    border-top: 2px solid #001365;
     padding: 10px;
     bottom: 0;
     width: 100%;
@@ -189,6 +146,7 @@ div.col-sm-12{
     text-align: center;
     color: #001365;
     float: left;
+    
 }
 
 .pFooter {
@@ -211,11 +169,22 @@ h3 {
     color:#3e3e3e;
     background:#efefef;
     width:100%;
-    padding:20px;
+    padding:5%;
+    padding-left:13%;
+    padding-right:13%;
+}
+
+#article-div {
+    width:100%;
+    padding:5%;
+    padding-left:13%;
+    padding-right:13%;
+    background:#efefef;
 }
 
 #portalImg {
     width:100%;
     height:auto;
-    padding-top: 80px;
+    padding-top: 10%;
+    padding-right:2%;
 }

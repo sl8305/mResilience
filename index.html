@@ -9,6 +9,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
@@ -17,8 +18,11 @@
     <!-- Font Awesome CSS Icons (For cool glyphicons) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     
+
+    
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css" media="screen" />
+    
   </head>
 
   <body>
@@ -239,7 +243,7 @@
 <br>
 
   <!-- 04 PORTAL DIV -->
-<div class= "container" id= "portal-div">
+<div id= "portal-div">
   <div class="row">
     <!-- div for the portal text -->
     <div class="col-lg-6 col-sm-12">
@@ -254,114 +258,91 @@
     <!-- div for the Feature images -->
     <div class="col-lg-6 col-sm-12" style = "text-align: center">
       <img id= 'portalImg' src="Assets/Images/portal.png" alt="portalImg">
-
     </div>
   </div>
 </div>
 
 <!---- 05 Contact Form ---->
-
 <div class="container">
-    <div class= "col-lg-12" id="back-form" class="col-12">
-        
-  <div class= "container learn-more" id="learn-more">
-    <div>
-      <h4 class="">Interested in a Demo? Let’s Do It!</h4>
-      <p class="">Our team is excited to demonstrate our mobile resilience program and discuss how it may fit your department needs. Please complete the brief contact form and we will reach out to coordinate a time to connect. Feel free to provide any details about your department and any specific needs you would like to discuss.</p>
-    </div>
+  <div class="row">
+    <div class= "col-lg-6 col-sm-12" id="back-form">
+        <h4 class="secondFont">Interested in a Demo? Let’s Do It!</h4>
+        <p class="">Our team is excited to demonstrate our mobile resilience program and discuss how it may fit your department needs. Please complete the brief contact form and we will reach out to coordinate a time to connect. Feel free to provide any details about your department and any specific needs you would like to discuss.</p>
+      </div> 
 
-    <form class= "col-6" id="back-form">
-      
-      <div class="form-group row">
-        <div class="col-lg-12">
-          <input type="text" class="form-control form-control" id="user-dept" placeholder="Dept">
+    <form class= "col-lg-6 col-sm-12" id="back-form">
+      <!-- INPUT SECTION -->
+      <div class="form-group" >
+        <!-- Department input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+          <input type="text" class="form-control input-border" id="user-dept" placeholder="Department">
+          </div>
         </div>
-      </div>
 
-      <div class="form-group row">
-      <!-- <label form="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm"></label> -->
-        <div class="col-lg-12">
-          <input type="text" class="form-control form-control" id="user-name" placeholder="name">
+        <!-- First name input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+            <input type="text" class="form-control input-border" id="user-name" placeholder="First Name">
+          </div>
         </div>
-      </div>
 
-      <div class="form-group row">
-        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label"></label> -->
-        <div class="col-lg-12">
-          <input type="text" class="form-control" id="user-last-name" placeholder="last name">
+        <!-- Last name input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+            <input type="text" class="form-control input-border" id="user-last-name" placeholder="Last name">
+          </div>
         </div>
-      </div>
 
-      <div class="form-group row">
-        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
-        <div class="col-lg-12">
-          <input type="email" class="form-control form-control" id="user-email" placeholder="email">
+        <!-- Email input -->
+        <div class="row input-row">
+          <div class="col-lg-12">
+            <input type="email" class="form-control input-border" id="user-email" placeholder="Email">
+          </div>
         </div>
-      </div>
 
-      <div class="form-group row">
-        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
-        <div class="col-lg-12">
-          <label for="message"></label>
-          <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes">
-          </textarea>
+        <!-- Notes input -->
+        <div class="row">
+          <div class="col-lg-12">
+            <label for="message"></label>
+            <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes">
+            </textarea>
+          </div>
         </div>
-      </div>
 
-    <!---- SUBMIT BUTTON ---->
-      <div class="form-group row">
-        <!-- <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label"></label> -->
-        <div class="col-lg-12">
-          <button type="submit" class="btn btn-primary" id="send">submit</button>
+        <!-- Submit button -->
+        <div class="row">
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-primary" id="send">submit</button>
+          </div>
         </div>
       </div>
     </form>
   </div>
-
-</div>  <!--closes <div class= "col-lg-12" id="back-form" class="col-12">-->
+</div>
 
 <!--06 Articles goes here-->
-<!-- Row for Searching New York Times -->
 <div class="container">
   <div class="col-sm-4">
     <br>
-
         <!-- Here we create an HTML Form for handling the inputs-->
         <div id="location">
-
           <!-- Here we create the text box for capturing the search term-->
           <div class="form-group">
             <!-- <label for="search">Your location</label> -->
             <input type="text" class="form-control" placeholder="Your location" id="search-term">
           </div>
-
-
-           <!-- Here we have our final submit button -->
-           <button type="submit" class="btn btn-default" id="run-search">
-            <i class="fa fa-search"></i> Search</button>
-          <button class="btn btn-default" id="clear-all">
-            <i class="fa fa-trash"></i> Clear Results</button>
-        
-        </div>  <!-- closes div class "card-body"-->
-
-    </div>  <!--closes <div card">-->
-
-    </div>  <!-- closes location-->
-        
-      </div>
+        </div>  <!-- closes location--> 
     </div>
   </div>
-</div>
 
 <!-- This row will handle all of the retrieved articles -->
-<div class="container">
+<div id="article-div">
   <div class="col-sm-12">
     <br>
 
-
     <!-- This card will initially be made up of a card for each of the articles retrieved -->
     <div class="card">
-
 
       <!-- card Heading for the retrieved articles box -->
       <div class="card-header">
@@ -378,21 +359,29 @@
 
 
 <!--07 About TIAG goes here-->
-<div id="about">
-<div class="row test">
+<div id="about" class="container">
+  <div class="row">
+    <div id = "whoWeAre"   style="margin-top:15px">
+      <h4 class="secondFont"><b>Who are we?</b>  We build technologies that work.</h4></div>
+      <div id = "whoWeAreP">
+        <p>We are a team of innovators. With 20 years’ worth of experience TIAG has developed a leading reputation in researching, designing and developing resilience-based technology products for the military, government and most recently, the first responder communities. Our staff are experts comprising program and project managers, subject matter experts, researchers, designers and developers. Collectively, we bring a comprehensive approach to advising and creating relevant resilience-based technology services, programs and products.</p>
+      </div>
 
-    <div id = "whoWeAre"><h4><b>Who are we?</b> We build technologies that work.</h4></div>
-      <div id = "whoWeAreP"><p>We are a team of innovators. With 20 years’ worth of experience TIAG has developed a leading reputation in researching, designing and developing resilience-based technology products for the military, government and most recently, the first responder communities. Our staff are experts comprising program and project managers, subject matter experts, researchers, designers and developers. Collectively, we bring a comprehensive approach to advising and creating relevant resilience-based technology services, programs and products.
-      </p></div>
-  <br>
-    <div id="haveIdeas"><h4><b>Have ideas?</b> Come innovate with us!</h4></div>
-      <div id= "haveIdeasP"><p>Our resilience program is just the beginning and is rapidly evolving. Creating first responder-focused resilience solutions does not happen without collaboration with those who protect our communities. Do you have ideas to evaluate resilience? Want to create a digital tool or feature to help your department or agency thrive? We want to work with you.
-      </p>
+      <br>
+      <br>
+
+      <div id="haveIdeas">
+        <h4 class="secondFont"><b>Have ideas?</b> Come innovate with us!</h4>
+      </div>
+
+      <div id= "haveIdeasP">
+        <p>Our resilience program is just the beginning and is rapidly evolving. Creating first responder-focused resilience solutions does not happen without collaboration with those who protect our communities. Do you have ideas to evaluate resilience? Want to create a digital tool or feature to help your department or agency thrive? We want to work with you.</p>
+      </div>
+      
+      <br>
     </div>
-    <br>
-  </div> <!--div class-->
+  </div>
 </div>
-    
 
   <!-- FOOTER FOR THE WEBSITE -->
   <footer class="footer">
@@ -424,6 +413,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     
@@ -436,6 +426,7 @@
     <!-- script link to send email from contact form to tiag -->
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
     <script src="script.js"></script>
     <script src="articles.js"></script>
 
