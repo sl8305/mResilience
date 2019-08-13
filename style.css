@@ -117,11 +117,40 @@ nav {
 
 /* articles section */
 
-#location{
-    display: flex;
+#art-header{
+    margin-left:15%;
+    color:#001365;
 }
 
-.button-format {
+#art-text{
+    margin-left:15%;
+    color: #3e3e3e;
+}
+
+div#location div.form-group{
+    margin:1em;
+    width: 33%;
+}
+
+#run-search{
+    text-align: center;
+    margin: 1em;
+}
+
+#clear-all{
+    margin: 1em;
+}
+
+#location{
+    display: flex;
+    justify-content:center;
+}
+
+#run-search{
+    background-color: #001365;
+    color:white;
+}
+#clear-all{
     background-color: #001365;
     color:white;
 }
@@ -138,11 +167,6 @@ nav {
 
 div.col-sm-12{
     margin-bottom:1em;
-}
-
-
-#article-div {
-    background: #EFEFEF
 }
 
 /*Footer*/
