@@ -72,14 +72,9 @@ nav {
     list-style-image: url('Assets/Images/02arrow.svg')
 }
 
-/* want to learn more and form */
-#learn-more #back-form{
-    margin-left:1em;
-}
-
-#learn-more.container.learn-more{
-    margin-top: 3em;
-    display: flex;
+.contactForm {
+    /* margin:10px; */
+    padding:20px;
 }
 
 .input-row {
@@ -140,18 +135,14 @@ div.col-sm-12{
     margin-bottom:1em;
 }
 
-/*07 About*/
-#about {
-    background-color: #EFEFEF;
-    color:#001365;
-}
 
-.test {
-    margin: 0 100px;
+#article-div {
+    background: #EFEFEF
 }
 
 /*Footer*/
 .footer {
+    border-top: 2px solid #001365;
     padding: 10px;
     bottom: 0;
     width: 100%;
@@ -182,11 +173,22 @@ h3 {
     color:#3e3e3e;
     background:#efefef;
     width:100%;
-    padding:20px;
+    padding:5%;
+    padding-left:13%;
+    padding-right:13%;
+}
+
+#article-div {
+    width:100%;
+    padding:5%;
+    padding-left:13%;
+    padding-right:13%;
+    background:#efefef;
 }
 
 #portalImg {
     width:100%;
     height:auto;
-    padding-top: 80px;
+    padding-top: 10%;
+    padding-right:2%;
 }
