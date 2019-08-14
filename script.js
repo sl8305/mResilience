@@ -97,3 +97,35 @@ if (validEmail === true){
     contact();
 }
 });
+
+
+// SCRIPT FOR ADJUSTING THE FOOTER
+// if the screen is "mobile" the icons will move to a new div
+if (){
+    $('.footer').empty();
+    var fText = $('.footer').append('<div class="col-12">');
+    fText.append('<p class = "pFooter"> TIAG® is a woman-owned business. DUNS: 065245750. </p>, <p class = "pFooter"> Corporate Headquarters: (703) 437-7878 Ext. 11911 </p>, <p class = "pFooter"> Freedom Drive, Suite 1180, Reston, VA 20190 </p>, <br>, <p class = "pFooter"> This website is Copyright © 2019 </p>, <p class = "pFooter"> The Informatics Applications Group, Inc. </p>');
+    
+    var fLogo = $('.footer').append('<div class="col-12">');
+    fLogo.append('<img class= "footerImage" src= "Assets/Images/mresilience_sm_blue.svg" alt= "mresilience_sm_blue" style= "margin-top: 20px;">, <img class= "footerImage" src= "Assets/Images/Facebook.svg" alt="fbLogo">');
+
+}
+//else the layout will be "desktop"
+else {
+    $('.footer').empty();
+    var c = $('.footer').append('<div class="container">');
+    var r = c.append('<div class= "row">');
+    var pt1 = r.append('<div class="col-2">');
+    
+    //appending first icon
+    pt1.append('<img class= "footerImage center-block" src= "Assets/Images/TIAGlogo.svg" alt= "TIAGlogo" style= "margin-top: 30px;"></img>');
+
+    //appending the footer text
+    var pt2 = r.append('<div class="col-8" >');
+    pt2.append('<p class = "pFooter"> TIAG® is a woman-owned business. DUNS: 065245750. </p>, <p class = "pFooter"> Corporate Headquarters: (703) 437-7878 Ext. 11911 </p>, <p class = "pFooter"> Freedom Drive, Suite 1180, Reston, VA 20190 </p>, <br>, <p class = "pFooter"> This website is Copyright © 2019 </p>, <p class = "pFooter"> The Informatics Applications Group, Inc. </p>');
+
+    // appending the last two icons
+    var pt3 =r.append('<div class= "col-2">');
+    pt3.append('<img class= "footerImage" src= "Assets/Images/mresilience_sm_blue.svg" alt= "mresilience_sm_blue" style= "margin-top: 20px;">, <img class= "footerImage" src= "Assets/Images/Facebook.svg" alt="fbLogo">');
+}
+
