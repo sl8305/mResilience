@@ -93,28 +93,7 @@ if (validEmail === true){
         message => alert("Thank you for your interest, we will contact you shortly!")
     );
 }else{
-
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
-    console.log('name : ', name);
-    console.log('last name : ', lastName);
-    console.log('email : ', emailAddress);
-    console.log('comments : ', comments);
-});
-
-=======
-    // console.log('name : ', name);
-    // console.log('last name : ', lastName);
-    // console.log('email : ', emailAddress);
-    // console.log('comments : ', comments);
-});
-
-
->>>>>>> bb72776be27ef7a3ac2ebec8165e49c07860967b
-=======
     prompt('Please provide valid email');
     contact();
 }
 });
->>>>>>> 267e7e2b73b657c0019c944ca8611f0ebb82584a
