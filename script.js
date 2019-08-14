@@ -49,51 +49,53 @@ x.addListener(checkMobile); // attatch listener function on state change
 
 
 // function to gather the contact info
-function contact() {
-    name = $('#user-name').val().trim();
-    lastName = $('#user-last-name').val().trim();
-    emailAddress = $('#user-email').val().trim();
-    comments = $('#message').val().trim();
+// function contact() {
+//     name = $('#user-name').val().trim();
+//     lastName = $('#user-last-name').val().trim();
+//     emailAddress = $('#user-email').val().trim();
+//     comments = $('#message').val().trim();
+// }
+
+
+// Email Validation
+
+function validateEmail() {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(emailAddress).toLowerCase());
 }
-
-// Spell Check API
-
-OkHttpClient client = new OkHttpClient();
-
-Request request = new Request.Builder()
-	.url("https://montanaflynn-spellcheck.p.rapidapi.com/check/?text=This%20sentnce%20has%20some%20probblems.")
-	.get()
-	.addHeader("x-rapidapi-host", "montanaflynn-spellcheck.p.rapidapi.com")
-	.addHeader("x-rapidapi-key", "f584d32ad1mshf0cebe5f7850049p16710bjsn468c2f3c3760")
-	.build();
-
-Response response = client.newCall(request).execute();
-
-
 
 
 // click event on submit button will get contact() to run
 $('#send').on('click', function (stop) {
     stop.preventDefault(); 
-    contact();
+    contact(); 
+   
+var validEmail = validateEmail();
+// if validEmail is true, alert to the user, enter in a valid email
+
+console.log(validEmail);
+   // else, run the code below
 
     // code source can be found here: https://www.smtpjs.com/
 // code with encryption available
-Email.send({
-    Host: 'smtp25.elasticemail.com',  // for testing
-    Username: 'marinocarranza@hotmail.com',  // from user input, do we need it?
-    Password: 'a5b01d0e-fdfe-4593-8205-cb8f0d332406',  // probably not needed for our purpose
-    To: 'marino.carranza@gmail.com',    // for testing
-    From: 'marinocarranza@hotmail.com',  //user input
-    Subject: 'from User',    // first words of comment or static?
-    Body: `${emailAddress} sent you a message and would love a reply
-                Message: ${comments}`   // will come from comment form
-}).then(
-    message => alert(message)
-);
+if (validEmail === true){
 
+    Email.send({
+        Host: 'smtp25.elasticemail.com',  // for testing
+        Username: 'marinocarranza@hotmail.com',  // from user input, do we need it?
+        Password: 'a5b01d0e-fdfe-4593-8205-cb8f0d332406',  // probably not needed for our purpose
+        To: 'marino.carranza@gmail.com',    // for testing
+        From: 'marinocarranza@hotmail.com',  //user input
+        Subject: 'from User',    // first words of comment or static?
+        Body: `${emailAddress} sent you a message and would love a reply
+                    Message: ${comments}`   // will come from comment form
+    }).then(
+        message => alert("Thank you for your interest, we will contact you shortly!")
+    );
+}else{
 
     
+<<<<<<< HEAD
 <<<<<<< HEAD
     console.log('name : ', name);
     console.log('last name : ', lastName);
@@ -110,3 +112,9 @@ Email.send({
 
 
 >>>>>>> bb72776be27ef7a3ac2ebec8165e49c07860967b
+=======
+    prompt('Please provide valid email');
+    contact();
+}
+});
+>>>>>>> 267e7e2b73b657c0019c944ca8611f0ebb82584a

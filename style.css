@@ -1,22 +1,50 @@
 body {
-width: 100%;
+    /*  APPLIES OPEN SANS WITH GREY COLOR TO WHOLE PAGE */
+    /*  Desired effect is making all text the grey and sans */
+    font-family: 'Open Sans', sans-serif;
+    color: #3e3e3e;
+    width: 100%;
+    font-weight: normal;
+}
+
+
+/*  CLASS FOR TITILLIUM FONT WITH BLUE COLOR */
+.secondFont {
+    font-family: 'Titillium Web', sans-serif;
+    color: #001365;
+    font-weight: bold;
+}
+
+/*  CLASS FOR INVERTED HEADER */
+.invert {
+    margin-top: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #eeeeee;
+    background-color: #001365;
+    padding: 10px;
+    padding-left: 15px;
 }
 
 /* 01 Nav */
+/*scroll animation for Chrome and FoxFire*/
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
-font-family: 'Titillium Web', sans-serif;
-color: #001365;
-background-color: #efefef;
-border-bottom: 2px solid #001365;
+    background-color: #efefef;
+    border-bottom: 2px solid #001365;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-link {
     margin-right: 15px;
-    }
-
-.nav-link h5 {
-    font-family: 'Titillium Web', sans-serif;
-    color: #001365;
+    padding: 5px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
     }
 
 .nav-link h5:hover {
@@ -25,174 +53,48 @@ border-bottom: 2px solid #001365;
     background-color: #001365;
     }
 
-.nav-link:hover {
-    background-color: #001365;
-        }
-
-#nav-fb {
-    margin-right: 10px;
-    margin-top: 0px;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    }
-
-#nav-tiag {
-    margin-top: 0px;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    }
-
 /* 02 Main Section */
-
-    #main h4 {
-        margin-top: 30px;
-        color: #001365;
-        font-family: 'Titillium Web', sans-serif;
-    }
-    
-    #mResLogo {
-        margin-top: 100px;
-    }
-    #leadText {
-        font-family: 'Open Sans', sans-serif;
-        color: #3e3e3e;
-    }
-    
-    #mainBottomImage {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-
-/* 03 Why Section*/
-
-    #challengesHeader {
-    margin-top: 15px;
-    font-family: 'Titillium Web', sans-serif;
-    color: #eeeeee;
-    background-color: #001365;
+#main h4 {
+    margin-top: 30px;
 }
 
-    #solutionHeader {
-    margin-top: 10px;
-    font-family: 'Titillium Web', sans-serif;
-    color: #eeeeee;
-    background-color: #001365;
+#mResLogo {
+    margin-top: 100px;
 }
 
-#challengeStatement {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
+#mainBottomImage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
-#solutionStatement {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
+/* Bullet points */
+.checkBullets {
+    list-style-image: url('Assets/Images/02checkmark.svg');
 }
 
-#stressSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
+.exPt {
+    list-style-image: url('Assets/Images/02exclamation.svg');
 }
 
-#challengesSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#whymResSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#programSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#visionSubHeader {
-    color: #001365;
-    font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-/* Bullet points of Why Section*/
-
-
-#stressbullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-}
-
-#stressbullets2 {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-}
-
-#challengebullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-}
-
-#solutionbullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-}
-
-#whyBullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e; 
-}
-
-#offerBullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
-}
-
-#visionBullets {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
+.arrow {
+    list-style-image: url('Assets/Images/02arrow.svg')
 }
 
 
-
-/* want to learn more and form */
-
-#learn-more{
-    margin-left:2em;
+.contactForm {
+    /* margin:10px; */
+    padding:20px;
 }
 
-#back-form{
-    margin-left:4em;
-}
-#learn-more.container.learn-more{
-    margin-top: 3em;
-    display: flex;
+.input-row {
+    margin-top:10px;    
+    margin-bottom:10px;
 }
 
-#learn-more.container h5{
-    color: #001365;
-}
-
-#learn-more h5{
-    width: 50%;
-    color:#3e3e3e;
-}
-
-form#back-form.col-6{
+.input-border {
     border-style: none;
     border-bottom: 1px solid #ced4da;
-    margin-bottom: .25em;
-}
-
-div.form-group.row{
     margin-bottom: .25em;
 }
 
@@ -213,31 +115,39 @@ div.form-group.row{
     color:#001365;
 }
 
-/*About*/
-#about {
+/* articles section */
+
+#location{
+    display: flex;
+}
+
+.button-format {
+    background-color: #001365;
+    color:white;
+}
+
+#run-search:hover{
     background-color: #EFEFEF;
-    color:#001365;
-    }
-#whoWeAre {
-    font-family: 'Titillium Web', sans-serif;
+    color:#001365; 
 }
 
-#whoWeareP {
-    font-family: 'Open Sans', sans-serif;
+#clear-all:hover{
+    background-color: #EFEFEF;
+    color:#001365; 
 }
 
-#haveIdeas {
-    font-family: 'Titillium Web', sans-serif;
+div.col-sm-12{
+    margin-bottom:1em;
 }
 
-#haveIdeasP {
-    font-family: 'Open Sans', sans-serif;
-}
 
+#article-div {
+    background: #EFEFEF
+}
 
 /*Footer*/
-
 .footer {
+    border-top: 2px solid #001365;
     padding: 10px;
     bottom: 0;
     width: 100%;
@@ -245,6 +155,7 @@ div.form-group.row{
     text-align: center;
     color: #001365;
     float: left;
+    
 }
 
 .pFooter {
@@ -265,10 +176,24 @@ h3 {
 
 #portal-div{
     color:#3e3e3e;
+    background:#efefef;
+    width:100%;
+    padding:5%;
+    padding-left:13%;
+    padding-right:13%;
 }
 
-@media screen and (max-width: 700px){
-    .footerImage {
-        margin: 10px;
-    }
+#article-div {
+    width:100%;
+    padding:5%;
+    padding-left:13%;
+    padding-right:13%;
+    background:#efefef;
+}
+
+#portalImg {
+    width:100%;
+    height:auto;
+    padding-top: 10%;
+    padding-right:2%;
 }
