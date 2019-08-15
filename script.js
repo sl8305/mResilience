@@ -32,9 +32,10 @@ function checkMobile(x){
             $(p5).appendTo(mobileMiddle1);
 
         var mobileMiddle2 = $("<div style= 'width:100%' class= 'col-sm-12'>").appendTo('#footer-row');
-        $(icon1).appendTo(mobileMiddle2);
-        $(icon2).appendTo(mobileMiddle2);
-        $(icon3).appendTo(mobileMiddle2);    
+            // adding icons
+            $(icon1).appendTo(mobileMiddle2);
+            $(icon2).appendTo(mobileMiddle2);
+            $(icon3).appendTo(mobileMiddle2);    
     }
     else {
         $('#footer-row').empty();
