@@ -84,11 +84,11 @@ nav {
 
 /* contact form */
 
-div.container div.row h4.secondFont{
-   padding-top: 5%;
+div.container div.row h4.secondFont {
+    padding-top: 5%;
 }
 
-div.container div.row form#back-form.col-lg-6.col-sm-12{
+div.container div.row form#back-form.col-lg-6.col-sm-12 {
     padding-top:1%;
 }
 
