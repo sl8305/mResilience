@@ -28,7 +28,7 @@
 
   <!-- 01 Nav -->
   <nav class="navbar navbar-expand-lg nav-bg-color navbar-light" id="nav">
-    <a class="navbar-brand" href="#"><img src="assets/images/mResFullLogo.svg" alt="mResilience Logo" class="img-fluid"></a>
+    <a class="navbar-brand" href="#"><img src="assets/images/mresfulllogo.svg" alt="mResilience Logo" class="img-fluid"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -258,11 +258,16 @@
     <!-- div for the portal text -->
     <div class="col-lg-6 col-sm-12">
       <img style= "height: 25%; margin-bottom: 20px" src="Assets/Images/portallogo.svg" alt="mResLogo">
-      <h4 class= "secondFont">Mobile App for First Responders</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam numquam dolorem quia pariatur tenetur nulla eaque quis, labore placeat soluta mollitia aliquid, repellat fuga, animi quas iste maxime dolor.</p>
+      <h4 class= "secondFont">Update App Content in Minutes!</h4>
+      <p>The <b> mRes Portal</b> is a web application that syncs with the <b>mRes mobile app</b>. Departments can take control by customizing app content anytime. Content changes in the Portal will immediately update to the app at the click of a button. </p>
       
-      <h4 class= "secondFont">Key Features</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iure facilis amet magni. Cupiditate alias unde, quis numquam nisi, id eligendi temporibus quaerat totam voluptas, atque dolores hic fugiat dolor.</p> 
+      <ul class="arrow">
+          <li>Update their Peer Support roster including adding/deleting team members, modifying bios, and changing contact information</li>
+          <li>Configure department, local and national resources to fit department needs</li>
+          <li>Update wellness tips to share with employees (coming soon!)</li>
+
+
+      </ul>
     </div>
 
     <!-- div for the Feature images -->
@@ -315,8 +320,7 @@
         <div class="row">
           <div class="col-lg-12">
             <label for="message"></label>
-            <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes">
-            </textarea>
+            <textarea class="col-lg-12" id="message" name="message" required="required" placeholder="notes"></textarea>
           </div>
         </div>
 
@@ -333,24 +337,25 @@
 
 <!--06 Articles goes here-->
 <!-- Row for Searching New York Times -->
-<div class="container">
+<div id="search-box">
+  <div class="container">
+    <h4 class="secondFont" id="art-header">Interested in current news on Police Resilience?</h4>
+    <p id="art-text">Check out what others are doing in your area.</p>
+    <!-- Here we create an HTML Form for handling the inputs-->
+    <div id="location">
+      <!-- Here we create the text box for capturing the search term-->
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your location" id="search-term">
+      </div>
 
-  <h4 id="art-header">Interested in current news on Police Resilience?</h4>
-  <p id="art-text">Check out what others are doing in your area.</p>
-  <!-- Here we create an HTML Form for handling the inputs-->
-  <div id="location">
-    <!-- Here we create the text box for capturing the search term-->
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Your location" id="search-term">
-    </div>
-
-      <!-- Here we have our final submit button -->
-    <button type="submit" class="btn btn-default" id="run-search">
-      <i class="fa fa-search"></i> Search</button>
-    <button class="btn btn-default" id="clear-all">
-      <i class="fa fa-trash"></i> Clear Results</button>
-  </div>  <!-- closes div id "location"-->
-</div>  <!-- closes div class "container"-->
+        <!-- Here we have our final submit button -->
+      <button type="submit" class="btn btn-default" id="run-search">
+        <i class="fa fa-search"></i> Search</button>
+      <button class="btn btn-default" id="clear-all">
+        <i class="fa fa-trash"></i> Clear Results</button>
+    </div>  <!-- closes div id "location"-->
+  </div>  <!-- closes div class "container"-->
+</div>  <!-- closes div id "search-box"-->
 
 <!-- This row will handle all of the retrieved articles -->
 <div id="article-div">
@@ -401,28 +406,9 @@
 
   <!-- FOOTER FOR THE WEBSITE -->
   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <!-- icon space -->
-        <div class= "col-2">
-          <img class= "footerImage center-block" src= "Assets/Images/TIAGlogo.svg" alt= "TIAGlogo" style= "margin-top: 30px;">
-        </div> 
-
-        <!-- info space -->
-        <div class= "col-8">
-          <p class = "pFooter"> TIAG® is a woman-owned business. DUNS: 065245750. </p>
-          <p class = "pFooter"> Corporate Headquarters: (703) 437-7878 Ext. 11911 </p>
-          <p class = "pFooter"> Freedom Drive, Suite 1180, Reston, VA 20190 </p>
-            <br>
-          <p class = "pFooter"> This website is Copyright © 2019 </p>
-          <p class = "pFooter"> The Informatics Applications Group, Inc. </p>
-        </div> 
-
-        <!-- fbook icon space  -->
-        <div class= "col-2">
-          <img class= "footerImage" src= "Assets/Images/mresilience_sm_blue.svg" alt= "mresilience_sm_blue" style= "margin-top: 20px;">
-          <img class= "footerImage" src= "Assets/Images/Facebook.svg" alt="fbLogo">
-        </div> 
+    <div  id= "" class="container">
+      <div id= "footer-row" class="row">
+        <!-- footer conditions in Javascript will reference this div -->
       </div>
     </div>
   </footer>
