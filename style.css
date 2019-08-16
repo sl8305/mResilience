@@ -83,7 +83,6 @@ nav {
 
 
 .contactForm {
-    /* margin:10px; */
     padding:20px;
 }
 
@@ -115,28 +114,9 @@ nav {
     color:#001365;
 }
 
-/* articles section */
-
-#art-header{
-    color:#001365;
-}
-
-#art-text{
-    color: #3e3e3e;
-}
-
 div#location div.form-group{
     margin:1em;
     width: 33%;
-}
-
-#run-search{
-    text-align: center;
-    margin: 1em;
-}
-
-#clear-all{
-    margin: 1em;
 }
 
 #location{
@@ -144,27 +124,28 @@ div#location div.form-group{
     justify-content:center;
 }
 
-#run-search{
+.buttonColor {
     background-color: #001365;
     color:white;
-}
-#clear-all{
-    background-color: #001365;
-    color:white;
+    margin: 1em;
+    text-align: center;
 }
 
-#run-search:hover{
-    background-color: #EFEFEF;
-    color:#001365; 
-}
-
-#clear-all:hover{
+.buttonColor:hover{
     background-color: #EFEFEF;
     color:#001365; 
 }
 
 div.col-sm-12{
     margin-bottom:1em;
+}
+
+#search-div {
+    background:#efefef;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 5%;
 }
 
 /*Footer*/
@@ -177,7 +158,6 @@ div.col-sm-12{
     text-align: center;
     color: #001365;
     float: left;
-    
 }
 
 .pFooter {
@@ -192,10 +172,6 @@ div.col-sm-12{
     margin-right: auto;
 }
 
-h3 {
-    color: #001365;
-}
-
 #portal-div{
     color:#3e3e3e;
     background:#efefef;
@@ -208,8 +184,8 @@ h3 {
 #article-div {
     width:100%;
     padding:5%;
-    padding-left:13%;
-    padding-right:13%;
+    padding-left:10%;
+    padding-right:10%;
     background:#efefef;
 }
 
