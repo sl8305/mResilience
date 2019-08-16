@@ -139,6 +139,14 @@ div#location div.form-group{
     margin: 1em;
 }
 
+div#search-box{
+    background-color: #EFEFEF;
+}
+
+div#search-box div.container h4.secondFont#art-header{
+    padding-top:2%;
+}
+
 #location{
     display: flex;
     justify-content:center;

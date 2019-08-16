@@ -338,24 +338,25 @@
 
 <!--06 Articles goes here-->
 <!-- Row for Searching New York Times -->
-<div class="container">
+<div id="search-box">
+  <div class="container">
+    <h4 class="secondFont" id="art-header">Interested in current news on Police Resilience?</h4>
+    <p id="art-text">Check out what others are doing in your area.</p>
+    <!-- Here we create an HTML Form for handling the inputs-->
+    <div id="location">
+      <!-- Here we create the text box for capturing the search term-->
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your location" id="search-term">
+      </div>
 
-  <h4 id="art-header">Interested in current news on Police Resilience?</h4>
-  <p id="art-text">Check out what others are doing in your area.</p>
-  <!-- Here we create an HTML Form for handling the inputs-->
-  <div id="location">
-    <!-- Here we create the text box for capturing the search term-->
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Your location" id="search-term">
-    </div>
-
-      <!-- Here we have our final submit button -->
-    <button type="submit" class="btn btn-default" id="run-search">
-      <i class="fa fa-search"></i> Search</button>
-    <button class="btn btn-default" id="clear-all">
-      <i class="fa fa-trash"></i> Clear Results</button>
-  </div>  <!-- closes div id "location"-->
-</div>  <!-- closes div class "container"-->
+        <!-- Here we have our final submit button -->
+      <button type="submit" class="btn btn-default" id="run-search">
+        <i class="fa fa-search"></i> Search</button>
+      <button class="btn btn-default" id="clear-all">
+        <i class="fa fa-trash"></i> Clear Results</button>
+    </div>  <!-- closes div id "location"-->
+  </div>  <!-- closes div class "container"-->
+</div>  <!-- closes div id "search-box"-->
 
 <!-- This row will handle all of the retrieved articles -->
 <div id="article-div">
