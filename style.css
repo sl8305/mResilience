@@ -82,9 +82,14 @@ nav {
 }
 
 
-.contactForm {
-    /* margin:10px; */
-    padding:20px;
+/* contact form */
+
+div.container div.row h4.secondFont{
+   padding-top: 5%;
+}
+
+div.container div.row form#back-form.col-lg-6.col-sm-12{
+    padding-top:1%;
 }
 
 .input-row {
@@ -123,6 +128,7 @@ nav {
 
 #art-text{
     color: #3e3e3e;
+
 }
 
 div#location div.form-group{
