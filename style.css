@@ -66,6 +66,7 @@ nav {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    margin-bottom:10px;
 }
 
 /* Bullet points */
@@ -82,8 +83,14 @@ nav {
 }
 
 
-.contactForm {
-    padding:20px;
+/* contact form */
+
+div.container div.row h4.secondFont {
+    padding-top: 5%;
+}
+
+div.container div.row form#back-form.col-lg-6.col-sm-12 {
+    padding-top:2%;
 }
 
 .input-row {
@@ -140,11 +147,11 @@ div.col-sm-12{
     margin-bottom:1em;
 }
 
-#search-div {
+#search-div, #search-box {
     background:#efefef;
     width: 100%;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 11%;
+    padding-right: 11%;
     padding-top: 5%;
 }
 
@@ -177,8 +184,8 @@ div.col-sm-12{
     background:#efefef;
     width:100%;
     padding:5%;
-    padding-left:13%;
-    padding-right:13%;
+    padding-left:10%;
+    padding-right:8%;
 }
 
 #article-div {
@@ -194,4 +201,31 @@ div.col-sm-12{
     height:auto;
     padding-top: 10%;
     padding-right:2%;
+}
+
+/* Desktop View */
+@media (min-width:700px){
+    div#location div.form-group{
+        margin:1em;
+        width: 70%;
+        padding-left:0;
+        justify-content: left;
+    }
+}
+
+/* Mobile View */
+@media (max-width:700px){
+    #mainText {
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    #mResLogo {
+        margin-top:50px;
+    }
+
+    #mainBottomImage{
+        margin-bottom:20px;
+        margin-bottom:10px;
+    }
 }
