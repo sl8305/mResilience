@@ -109,7 +109,7 @@ if (validEmail === true){
         message => alert("Thank you for your interest, we will contact you shortly!")
     );
 }else{
-    prompt('Please provide valid email');
+    alert('Please provide valid email');
     contact();
 }
 });
