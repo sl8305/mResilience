@@ -66,6 +66,7 @@ nav {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    margin-bottom:10px;
 }
 
 /* Bullet points */
@@ -89,7 +90,7 @@ div.container div.row h4.secondFont {
 }
 
 div.container div.row form#back-form.col-lg-6.col-sm-12 {
-    padding-top:1%;
+    padding-top:2%;
 }
 
 .input-row {
@@ -120,37 +121,9 @@ div.container div.row form#back-form.col-lg-6.col-sm-12 {
     color:#001365;
 }
 
-/* articles section */
-
-#art-header{
-    color:#001365;
-}
-
-#art-text{
-    color: #3e3e3e;
-
-}
-
 div#location div.form-group{
     margin:1em;
     width: 33%;
-}
-
-#run-search{
-    text-align: center;
-    margin: 1em;
-}
-
-#clear-all{
-    margin: 1em;
-}
-
-div#search-box{
-    background-color: #EFEFEF;
-}
-
-div#search-box div.container h4.secondFont#art-header{
-    padding-top:2%;
 }
 
 #location{
@@ -158,27 +131,28 @@ div#search-box div.container h4.secondFont#art-header{
     justify-content:center;
 }
 
-#run-search{
+.buttonColor {
     background-color: #001365;
     color:white;
-}
-#clear-all{
-    background-color: #001365;
-    color:white;
+    margin: 1em;
+    text-align: center;
 }
 
-#run-search:hover{
-    background-color: #EFEFEF;
-    color:#001365; 
-}
-
-#clear-all:hover{
+.buttonColor:hover{
     background-color: #EFEFEF;
     color:#001365; 
 }
 
 div.col-sm-12{
     margin-bottom:1em;
+}
+
+#search-div, #search-box {
+    background:#efefef;
+    width: 100%;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 5%;
 }
 
 /*Footer*/
@@ -191,7 +165,6 @@ div.col-sm-12{
     text-align: center;
     color: #001365;
     float: left;
-    
 }
 
 .pFooter {
@@ -206,24 +179,20 @@ div.col-sm-12{
     margin-right: auto;
 }
 
-h3 {
-    color: #001365;
-}
-
 #portal-div{
     color:#3e3e3e;
     background:#efefef;
     width:100%;
     padding:5%;
-    padding-left:13%;
-    padding-right:13%;
+    padding-left:10%;
+    padding-right:8%;
 }
 
 #article-div {
     width:100%;
     padding:5%;
-    padding-left:13%;
-    padding-right:13%;
+    padding-left:10%;
+    padding-right:10%;
     background:#efefef;
 }
 
@@ -232,4 +201,31 @@ h3 {
     height:auto;
     padding-top: 10%;
     padding-right:2%;
+}
+
+/* Desktop View */
+@media (min-width:700px){
+    div#location div.form-group{
+        margin:1em;
+        width: 70%;
+        padding-left:0;
+        justify-content: left;
+    }
+}
+
+/* Mobile View */
+@media (max-width:700px){
+    #mainText {
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    #mResLogo {
+        margin-top:50px;
+    }
+
+    #mainBottomImage{
+        margin-bottom:20px;
+        margin-bottom:10px;
+    }
 }
