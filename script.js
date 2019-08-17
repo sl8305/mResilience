@@ -66,12 +66,12 @@ x.addListener(checkMobile); // attatch listener function on state change
 
 
 // function to gather the contact info
-// function contact() {
-//     name = $('#user-name').val().trim();
-//     lastName = $('#user-last-name').val().trim();
-//     emailAddress = $('#user-email').val().trim();
-//     comments = $('#message').val().trim();
-// }
+function contact() {
+    name = $('#user-name').val().trim();
+    lastName = $('#user-last-name').val().trim();
+    emailAddress = $('#user-email').val().trim();
+    comments = $('#message').val().trim();
+}
 
 
 // Email Validation
@@ -104,8 +104,7 @@ if (validEmail === true){
         To: 'marino.carranza@gmail.com',    // for testing
         From: 'marinocarranza@hotmail.com',  //user input
         Subject: 'from User',    // first words of comment or static?
-        Body: `${emailAddress} sent you a message and would love a reply
-                    Message: ${comments}`   // will come from comment form
+        Body: `${emailAddress} sent you a message and would love a reply; the message is: ${comments}`   // will come from comment form
     }).then(
         message => alert("Thank you for your interest, we will contact you shortly!")
     );
