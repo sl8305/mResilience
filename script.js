@@ -75,41 +75,62 @@ function contact() {
 
 
 // Email Validation
+    var access_key = '7f95822a0882fc130f048a764288d1c1';
+    // var email_address = 'support@apilayer.com';
+function validateEmail(cb) {
+   
 
-function validateEmail() {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(emailAddress).toLowerCase());
-}
+    // verify email address via AJAX call
+   return $.ajax({
+        url: 'http://apilayer.net/api/check?access_key=' + access_key + '&email=' + emailAddress,
+        dataType: 'jsonp',
+        success: function (json) {
+
+            // Access and use your preferred validation result objects
+            // console.log(json.format_valid);
+            // console.log(json.smtp_check);
+            // console.log(json.score);
+            // cb(format_valid, smtp_check)
+            return json
+            
+            
+        }
+   });
+    
+    
+};
+
 
 
 // click event on submit button will get contact() to run
-$('#send').on('click', function (stop) {
+$('#send').on('click', async function (stop) {
     stop.preventDefault(); 
     contact(); 
-   
-var validEmail = validateEmail();
-// if validEmail is true, alert to the user, enter in a valid email
 
-console.log(validEmail);
-   // else, run the code below
+    var validate = await validateEmail();
+    console.log(validate)
+    const { format_valid, smtp_check } = validate;
+
+// if validEmail is true, alert to the user, enter in a valid email
+    if (smtp_check === true && format_valid === true) {
+
+        Email.send({
+            Host: 'smtp25.elasticemail.com',  // for testing
+            Username: 'marinocarranza@hotmail.com',  // from user input, do we need it?
+            Password: 'a5b01d0e-fdfe-4593-8205-cb8f0d332406',  // probably not needed for our purpose
+            To: 'marino.carranza@gmail.com',    // for testing
+            From: 'marinocarranza@hotmail.com',  //user input
+            Subject: 'from User',    // first words of comment or static?
+            Body: `${emailAddress} sent you a message and would love a reply; the message is: ${comments}`   // will come from comment form
+        }).then(
+            message => alert("Thank you for your interest, we will contact you shortly!")
+        );
+    }else{
+        alert('Please provide valid email');
+        contact();
+    }  
 
     // code source can be found here: https://www.smtpjs.com/
 // code with encryption available
-if (validEmail === true){
 
-    Email.send({
-        Host: 'smtp25.elasticemail.com',  // for testing
-        Username: 'marinocarranza@hotmail.com',  // from user input, do we need it?
-        Password: 'a5b01d0e-fdfe-4593-8205-cb8f0d332406',  // probably not needed for our purpose
-        To: 'marino.carranza@gmail.com',    // for testing
-        From: 'marinocarranza@hotmail.com',  //user input
-        Subject: 'from User',    // first words of comment or static?
-        Body: `${emailAddress} sent you a message and would love a reply; the message is: ${comments}`   // will come from comment form
-    }).then(
-        message => alert("Thank you for your interest, we will contact you shortly!")
-    );
-}else{
-    alert('Please provide valid email');
-    contact();
-}
 });
